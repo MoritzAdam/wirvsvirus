@@ -1,7 +1,7 @@
 library(httr)
 library(rlist)
 library(jsonlite)
-library(dplyr)
+library(tidyverse)
 
 #' helper function to download daily RKI data for "Landkreise" and format them as a tibble
 #'
@@ -26,7 +26,22 @@ query_arcgis_all <- function(n_entries = 8232,
   
   if(file.exists(file) & !force_download) {
     print('read from file')
-    dat <- read.csv(file) %>% 
+    dat <- readr::read_csv(file, 
+                           col_types = list(
+                             X1 = col_double(),
+                             id = col_double(),
+                             IdBundesland = col_double(),
+                             Bundesland = col_character(),
+                             Landkreis = col_character(),
+                             Altersgruppe = col_character(),
+                             Geschlecht = col_character(),
+                             AnzahlFall = col_double(),
+                             AnzahlTodesfall = col_double(),
+                             ObjectId = col_double(),
+                             Meldedatum = col_datetime(format = ""),
+                             IdLandkreis = col_character()
+                           )
+                           ) %>% 
       as_tibble()
   } else {
     print('query database')
