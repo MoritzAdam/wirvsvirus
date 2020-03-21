@@ -1,0 +1,402 @@
+ID,Typ,Name
+1001,Kreisfreie Stadt,"Flensburg, Stadt"
+1002,Kreisfreie Stadt,"Kiel, Landeshauptstadt"
+1003,Kreisfreie Stadt,"Lübeck, Hansestadt"
+1004,Kreisfreie Stadt,"Neumünster, Stadt"
+1051,Kreis,Dithmarschen
+1053,Kreis,Herzogtum Lauenburg
+1054,Kreis,Nordfriesland
+1055,Kreis,Ostholstein
+1056,Kreis,Pinneberg
+1057,Kreis,Plön
+1058,Kreis,Rendsburg-Eckernförde
+1059,Kreis,Schleswig-Flensburg
+1060,Kreis,Segeberg
+1061,Kreis,Steinburg
+1062,Kreis,Stormarn
+2000,Kreisfreie Stadt,"Hamburg, Freie und Hansestadt"
+3101,Kreisfreie Stadt,"Braunschweig, Stadt"
+3102,Kreisfreie Stadt,"Salzgitter, Stadt"
+3103,Kreisfreie Stadt,"Wolfsburg, Stadt"
+3151,Landkreis,Gifhorn
+3153,Landkreis,Goslar
+3154,Landkreis,Helmstedt
+3155,Landkreis,Northeim
+3157,Landkreis,Peine
+3158,Landkreis,Wolfenbüttel
+3159,Landkreis,Göttingen
+3241,Landkreis,Region Hannover
+3251,Landkreis,Diepholz
+3252,Landkreis,Hameln-Pyrmont
+3254,Landkreis,Hildesheim
+3255,Landkreis,Holzminden
+3256,Landkreis,Nienburg (Weser)
+3257,Landkreis,Schaumburg
+3351,Landkreis,Celle
+3352,Landkreis,Cuxhaven
+3353,Landkreis,Harburg
+3354,Landkreis,Lüchow-Dannenberg
+3355,Landkreis,Lüneburg
+3356,Landkreis,Osterholz
+3357,Landkreis,Rotenburg (Wümme)
+3358,Landkreis,Heidekreis
+3359,Landkreis,Stade
+3360,Landkreis,Uelzen
+3361,Landkreis,Verden
+3401,Kreisfreie Stadt,"Delmenhorst, Stadt"
+3402,Kreisfreie Stadt,"Emden, Stadt"
+3403,Kreisfreie Stadt,"Oldenburg (Oldenburg), Stadt"
+3404,Kreisfreie Stadt,"Osnabrück, Stadt"
+3405,Kreisfreie Stadt,"Wilhelmshaven, Stadt"
+3451,Landkreis,Ammerland
+3452,Landkreis,Aurich
+3453,Landkreis,Cloppenburg
+3454,Landkreis,Emsland
+3455,Landkreis,Friesland
+3456,Landkreis,Grafschaft Bentheim
+3457,Landkreis,Leer
+3458,Landkreis,Oldenburg
+3459,Landkreis,Osnabrück
+3460,Landkreis,Vechta
+3461,Landkreis,Wesermarsch
+3462,Landkreis,Wittmund
+4011,Kreisfreie Stadt,"Bremen, Stadt"
+4012,Kreisfreie Stadt,"Bremerhaven, Stadt"
+5111,Kreisfreie Stadt,"Düsseldorf, Stadt"
+5112,Kreisfreie Stadt,"Duisburg, Stadt"
+5113,Kreisfreie Stadt,"Essen, Stadt"
+5114,Kreisfreie Stadt,"Krefeld, Stadt"
+5116,Kreisfreie Stadt,"Mönchengladbach, Stadt"
+5117,Kreisfreie Stadt,"Mülheim an der Ruhr, Stadt"
+5119,Kreisfreie Stadt,"Oberhausen, Stadt"
+5120,Kreisfreie Stadt,"Remscheid, Stadt"
+5122,Kreisfreie Stadt,"Solingen, Klingenstadt"
+5124,Kreisfreie Stadt,"Wuppertal, Stadt"
+5154,Kreis,Kleve
+5158,Kreis,Mettmann
+5162,Kreis,Rhein-Kreis Neuss
+5166,Kreis,Viersen
+5170,Kreis,Wesel
+5314,Kreisfreie Stadt,"Bonn, Stadt"
+5315,Kreisfreie Stadt,"Köln, Stadt"
+5316,Kreisfreie Stadt,"Leverkusen, Stadt"
+5334,Kreis,Städteregion Aachen
+5358,Kreis,Düren
+5362,Kreis,Rhein-Erft-Kreis
+5366,Kreis,Euskirchen
+5370,Kreis,Heinsberg
+5374,Kreis,Oberbergischer Kreis
+5378,Kreis,Rheinisch-Bergischer Kreis
+5382,Kreis,Rhein-Sieg-Kreis
+5512,Kreisfreie Stadt,"Bottrop, Stadt"
+5513,Kreisfreie Stadt,"Gelsenkirchen, Stadt"
+5515,Kreisfreie Stadt,"Münster, Stadt"
+5554,Kreis,Borken
+5558,Kreis,Coesfeld
+5562,Kreis,Recklinghausen
+5566,Kreis,Steinfurt
+5570,Kreis,Warendorf
+5711,Kreisfreie Stadt,"Bielefeld, Stadt"
+5754,Kreis,Gütersloh
+5758,Kreis,Herford
+5762,Kreis,Höxter
+5766,Kreis,Lippe
+5770,Kreis,Minden-Lübbecke
+5774,Kreis,Paderborn
+5911,Kreisfreie Stadt,"Bochum, Stadt"
+5913,Kreisfreie Stadt,"Dortmund, Stadt"
+5914,Kreisfreie Stadt,"Hagen, Stadt der FernUniversität"
+5915,Kreisfreie Stadt,"Hamm, Stadt"
+5916,Kreisfreie Stadt,"Herne, Stadt"
+5954,Kreis,Ennepe-Ruhr-Kreis
+5958,Kreis,Hochsauerlandkreis
+5962,Kreis,Märkischer Kreis
+5966,Kreis,Olpe
+5970,Kreis,Siegen-Wittgenstein
+5974,Kreis,Soest
+5978,Kreis,Unna
+6411,Kreisfreie Stadt,"Darmstadt, Wissenschaftsstadt"
+6412,Kreisfreie Stadt,"Frankfurt am Main, Stadt"
+6413,Kreisfreie Stadt,"Offenbach am Main, Stadt"
+6414,Kreisfreie Stadt,"Wiesbaden, Landeshauptstadt"
+6431,Landkreis,Bergstraße
+6432,Landkreis,Darmstadt-Dieburg
+6433,Landkreis,Groß-Gerau
+6434,Landkreis,Hochtaunuskreis
+6435,Landkreis,Main-Kinzig-Kreis
+6436,Landkreis,Main-Taunus-Kreis
+6437,Landkreis,Odenwaldkreis
+6438,Landkreis,Offenbach
+6439,Landkreis,Rheingau-Taunus-Kreis
+6440,Landkreis,Wetteraukreis
+6531,Landkreis,Gießen
+6532,Landkreis,Lahn-Dill-Kreis
+6533,Landkreis,Limburg-Weilburg
+6534,Landkreis,Marburg-Biedenkopf
+6535,Landkreis,Vogelsbergkreis
+6611,Kreisfreie Stadt,"Kassel, documenta-Stadt"
+6631,Landkreis,Fulda
+6632,Landkreis,Hersfeld-Rotenburg
+6633,Landkreis,Kassel
+6634,Landkreis,Schwalm-Eder-Kreis
+6635,Landkreis,Waldeck-Frankenberg
+6636,Landkreis,Werra-Meißner-Kreis
+7111,Kreisfreie Stadt,"Koblenz, kreisfreie Stadt"
+7131,Landkreis,Ahrweiler
+7132,Landkreis,Altenkirchen (Westerwald)
+7133,Landkreis,Bad Kreuznach
+7134,Landkreis,Birkenfeld
+7135,Landkreis,Cochem-Zell
+7137,Landkreis,Mayen-Koblenz
+7138,Landkreis,Neuwied
+7140,Landkreis,Rhein-Hunsrück-Kreis
+7141,Landkreis,Rhein-Lahn-Kreis
+7143,Landkreis,Westerwaldkreis
+7211,Kreisfreie Stadt,"Trier, kreisfreie Stadt"
+7231,Landkreis,Bernkastel-Wittlich
+7232,Landkreis,Eifelkreis Bitburg-Prüm
+7233,Landkreis,Vulkaneifel
+7235,Landkreis,Trier-Saarburg
+7311,Kreisfreie Stadt,"Frankenthal (Pfalz), kreisfreie Stadt"
+7312,Kreisfreie Stadt,"Kaiserslautern, kreisfreie Stadt"
+7313,Kreisfreie Stadt,"Landau in der Pfalz, kreisfreie Stadt"
+7314,Kreisfreie Stadt,"Ludwigshafen am Rhein, kreisfreie Stadt"
+7315,Kreisfreie Stadt,"Mainz, kreisfreie Stadt"
+7316,Kreisfreie Stadt,"Neustadt an der Weinstraße, kreisfreie Stadt"
+7317,Kreisfreie Stadt,"Pirmasens, kreisfreie Stadt"
+7318,Kreisfreie Stadt,"Speyer, kreisfreie Stadt"
+7319,Kreisfreie Stadt,"Worms, kreisfreie Stadt"
+7320,Kreisfreie Stadt,"Zweibrücken, kreisfreie Stadt"
+7331,Landkreis,Alzey-Worms
+7332,Landkreis,Bad Dürkheim
+7333,Landkreis,Donnersbergkreis
+7334,Landkreis,Germersheim
+7335,Landkreis,Kaiserslautern
+7336,Landkreis,Kusel
+7337,Landkreis,Südliche Weinstraße
+7338,Landkreis,Rhein-Pfalz-Kreis
+7339,Landkreis,Mainz-Bingen
+7340,Landkreis,Südwestpfalz
+8111,Stadtkreis,"Stuttgart, Stadtkreis"
+8115,Landkreis,Böblingen
+8116,Landkreis,Esslingen
+8117,Landkreis,Göppingen
+8118,Landkreis,Ludwigsburg
+8119,Landkreis,Rems-Murr-Kreis
+8121,Stadtkreis,"Heilbronn, Stadtkreis"
+8125,Landkreis,Heilbronn
+8126,Landkreis,Hohenlohekreis
+8127,Landkreis,Schwäbisch Hall
+8128,Landkreis,Main-Tauber-Kreis
+8135,Landkreis,Heidenheim
+8136,Landkreis,Ostalbkreis
+8211,Stadtkreis,"Baden-Baden, Stadtkreis"
+8212,Stadtkreis,"Karlsruhe, Stadtkreis"
+8215,Landkreis,Karlsruhe
+8216,Landkreis,Rastatt
+8221,Stadtkreis,"Heidelberg, Stadtkreis"
+8222,Stadtkreis,"Mannheim, Stadtkreis"
+8225,Landkreis,Neckar-Odenwald-Kreis
+8226,Landkreis,Rhein-Neckar-Kreis
+8231,Stadtkreis,"Pforzheim, Stadtkreis"
+8235,Landkreis,Calw
+8236,Landkreis,Enzkreis
+8237,Landkreis,Freudenstadt
+8311,Stadtkreis,"Freiburg im Breisgau, Stadtkreis"
+8315,Landkreis,Breisgau-Hochschwarzwald
+8316,Landkreis,Emmendingen
+8317,Landkreis,Ortenaukreis
+8325,Landkreis,Rottweil
+8326,Landkreis,Schwarzwald-Baar-Kreis
+8327,Landkreis,Tuttlingen
+8335,Landkreis,Konstanz
+8336,Landkreis,Lörrach
+8337,Landkreis,Waldshut
+8415,Landkreis,Reutlingen
+8416,Landkreis,Tübingen
+8417,Landkreis,Zollernalbkreis
+8421,Stadtkreis,"Ulm, Stadtkreis"
+8425,Landkreis,Alb-Donau-Kreis
+8426,Landkreis,Biberach
+8435,Landkreis,Bodenseekreis
+8436,Landkreis,Ravensburg
+8437,Landkreis,Sigmaringen
+9161,Kreisfreie Stadt,Ingolstadt
+9162,Kreisfreie Stadt,"München, Landeshauptstadt"
+9163,Kreisfreie Stadt,Rosenheim
+9171,Landkreis,Altötting
+9172,Landkreis,Berchtesgadener Land
+9173,Landkreis,Bad Tölz-Wolfratshausen
+9174,Landkreis,Dachau
+9175,Landkreis,Ebersberg
+9176,Landkreis,Eichstätt
+9177,Landkreis,Erding
+9178,Landkreis,Freising
+9179,Landkreis,Fürstenfeldbruck
+9180,Landkreis,Garmisch-Partenkirchen
+9181,Landkreis,Landsberg am Lech
+9182,Landkreis,Miesbach
+9183,Landkreis,Mühldorf a.Inn
+9184,Landkreis,München
+9185,Landkreis,Neuburg-Schrobenhausen
+9186,Landkreis,Pfaffenhofen a.d.Ilm
+9187,Landkreis,Rosenheim
+9188,Landkreis,Starnberg
+9189,Landkreis,Traunstein
+9190,Landkreis,Weilheim-Schongau
+9261,Kreisfreie Stadt,Landshut
+9262,Kreisfreie Stadt,Passau
+9263,Kreisfreie Stadt,Straubing
+9271,Landkreis,Deggendorf
+9272,Landkreis,Freyung-Grafenau
+9273,Landkreis,Kelheim
+9274,Landkreis,Landshut
+9275,Landkreis,Passau
+9276,Landkreis,Regen
+9277,Landkreis,Rottal-Inn
+9278,Landkreis,Straubing-Bogen
+9279,Landkreis,Dingolfing-Landau
+9361,Kreisfreie Stadt,Amberg
+9362,Kreisfreie Stadt,Regensburg
+9363,Kreisfreie Stadt,Weiden i.d.OPf.
+9371,Landkreis,Amberg-Sulzbach
+9372,Landkreis,Cham
+9373,Landkreis,Neumarkt i.d.OPf.
+9374,Landkreis,Neustadt a.d.Waldnaab
+9375,Landkreis,Regensburg
+9376,Landkreis,Schwandorf
+9377,Landkreis,Tirschenreuth
+9461,Kreisfreie Stadt,Bamberg
+9462,Kreisfreie Stadt,Bayreuth
+9463,Kreisfreie Stadt,Coburg
+9464,Kreisfreie Stadt,Hof
+9471,Landkreis,Bamberg
+9472,Landkreis,Bayreuth
+9473,Landkreis,Coburg
+9474,Landkreis,Forchheim
+9475,Landkreis,Hof
+9476,Landkreis,Kronach
+9477,Landkreis,Kulmbach
+9478,Landkreis,Lichtenfels
+9479,Landkreis,Wunsiedel i.Fichtelgebirge
+9561,Kreisfreie Stadt,Ansbach
+9562,Kreisfreie Stadt,Erlangen
+9563,Kreisfreie Stadt,Fürth
+9564,Kreisfreie Stadt,Nürnberg
+9565,Kreisfreie Stadt,Schwabach
+9571,Landkreis,Ansbach
+9572,Landkreis,Erlangen-Höchstadt
+9573,Landkreis,Fürth
+9574,Landkreis,Nürnberger Land
+9575,Landkreis,Neustadt a.d.Aisch-Bad Windsheim
+9576,Landkreis,Roth
+9577,Landkreis,Weißenburg-Gunzenhausen
+9661,Kreisfreie Stadt,Aschaffenburg
+9662,Kreisfreie Stadt,Schweinfurt
+9663,Kreisfreie Stadt,Würzburg
+9671,Landkreis,Aschaffenburg
+9672,Landkreis,Bad Kissingen
+9673,Landkreis,Rhön-Grabfeld
+9674,Landkreis,Haßberge
+9675,Landkreis,Kitzingen
+9676,Landkreis,Miltenberg
+9677,Landkreis,Main-Spessart
+9678,Landkreis,Schweinfurt
+9679,Landkreis,Würzburg
+9761,Kreisfreie Stadt,Augsburg
+9762,Kreisfreie Stadt,Kaufbeuren
+9763,Kreisfreie Stadt,Kempten (Allgäu)
+9764,Kreisfreie Stadt,Memmingen
+9771,Landkreis,Aichach-Friedberg
+9772,Landkreis,Augsburg
+9773,Landkreis,Dillingen a.d.Donau
+9774,Landkreis,Günzburg
+9775,Landkreis,Neu-Ulm
+9776,Landkreis,Lindau (Bodensee)
+9777,Landkreis,Ostallgäu
+9778,Landkreis,Unterallgäu
+9779,Landkreis,Donau-Ries
+9780,Landkreis,Oberallgäu
+10041,Regionalverband,Regionalverband Saarbrücken
+10042,Landkreis,Merzig-Wadern
+10043,Landkreis,Neunkirchen
+10044,Landkreis,Saarlouis
+10045,Landkreis,Saarpfalz-Kreis
+10046,Landkreis,St. Wendel
+11000,Kreisfreie Stadt,"Berlin, Stadt"
+12051,Kreisfreie Stadt,"Brandenburg an der Havel, Stadt"
+12052,Kreisfreie Stadt,"Cottbus, Stadt"
+12053,Kreisfreie Stadt,"Frankfurt (Oder), Stadt"
+12054,Kreisfreie Stadt,"Potsdam, Stadt"
+12060,Landkreis,Barnim
+12061,Landkreis,Dahme-Spreewald
+12062,Landkreis,Elbe-Elster
+12063,Landkreis,Havelland
+12064,Landkreis,Märkisch-Oderland
+12065,Landkreis,Oberhavel
+12066,Landkreis,Oberspreewald-Lausitz
+12067,Landkreis,Oder-Spree
+12068,Landkreis,Ostprignitz-Ruppin
+12069,Landkreis,Potsdam-Mittelmark
+12070,Landkreis,Prignitz
+12071,Landkreis,Spree-Neiße
+12072,Landkreis,Teltow-Fläming
+12073,Landkreis,Uckermark
+13003,Kreisfreie Stadt,Rostock
+13004,Kreisfreie Stadt,Schwerin
+13071,Landkreis,Mecklenburgische Seenplatte
+13072,Landkreis,Landkreis Rostock
+13073,Landkreis,Vorpommern-Rügen
+13074,Landkreis,Nordwestmecklenburg
+13075,Landkreis,Vorpommern-Greifswald
+13076,Landkreis,Ludwigslust-Parchim
+14511,Kreisfreie Stadt,"Chemnitz, Stadt"
+14521,Landkreis,Erzgebirgskreis
+14522,Landkreis,Mittelsachsen
+14523,Landkreis,Vogtlandkreis
+14524,Landkreis,Zwickau
+14612,Kreisfreie Stadt,"Dresden, Stadt"
+14625,Landkreis,Bautzen
+14626,Landkreis,Görlitz
+14627,Landkreis,Meißen
+14628,Landkreis,Sächsische Schweiz-Osterzgebirge
+14713,Kreisfreie Stadt,"Leipzig, Stadt"
+14729,Landkreis,Leipzig
+14730,Landkreis,Nordsachsen
+15001,Kreisfreie Stadt,"Dessau-Roßlau, Stadt"
+15002,Kreisfreie Stadt,"Halle (Saale), Stadt"
+15003,Kreisfreie Stadt,"Magdeburg, Landeshauptstadt"
+15081,Landkreis,Altmarkkreis Salzwedel
+15082,Landkreis,Anhalt-Bitterfeld
+15083,Landkreis,Börde
+15084,Landkreis,Burgenlandkreis
+15085,Landkreis,Harz
+15086,Landkreis,Jerichower Land
+15087,Landkreis,Mansfeld-Südharz
+15088,Landkreis,Saalekreis
+15089,Landkreis,Salzlandkreis
+15090,Landkreis,Stendal
+15091,Landkreis,Wittenberg
+16051,Kreisfreie Stadt,"Erfurt, Stadt"
+16052,Kreisfreie Stadt,"Gera, Stadt"
+16053,Kreisfreie Stadt,"Jena, Stadt"
+16054,Kreisfreie Stadt,"Suhl, Stadt"
+16055,Kreisfreie Stadt,"Weimar, Stadt"
+16056,Kreisfreie Stadt,"Eisenach, Stadt"
+16061,Landkreis,Eichsfeld
+16062,Landkreis,Nordhausen
+16063,Landkreis,Wartburgkreis
+16064,Landkreis,Unstrut-Hainich-Kreis
+16065,Landkreis,Kyffhäuserkreis
+16066,Landkreis,Schmalkalden-Meiningen
+16067,Landkreis,Gotha
+16068,Landkreis,Sömmerda
+16069,Landkreis,Hildburghausen
+16070,Landkreis,Ilm-Kreis
+16071,Landkreis,Weimarer Land
+16072,Landkreis,Sonneberg
+16073,Landkreis,Saalfeld-Rudolstadt
+16074,Landkreis,Saale-Holzland-Kreis
+16075,Landkreis,Saale-Orla-Kreis
+16076,Landkreis,Greiz
+16077,Landkreis,Altenburger Land
