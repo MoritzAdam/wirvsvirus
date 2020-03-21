@@ -1,0 +1,8 @@
+Regiontyp,Raumtyp_Name,Raumtyp,Bevölkerung (Mio),Personenkilometer (Mio),Personenkilometer pro Einwohner pro Tag,Anteil unter 3 Wege pro Tag,Anteil 3 oder mehr Wege pro Tag
+Stadtregion,Metropole,71,14,558,39.8571428571429,0.48,0.52
+Stadtregion,Regiopole und Großstadt,72,12,434,36.1666666666667,0.49,0.51
+Stadtregion,"Mittelstadt, städtischer Raum",73,21,820,39.0476190476191,0.52,0.49
+Stadtregion,"kleinstädtischer, dörflicher Raum",74,5,222,44.4,0.51,0.48
+ländliche Region,zentrale Stadt,75,5,174,34.8,0.48,0.52
+ländliche Region,"Mittelstadt, städtischer Raum",76,12,437,36.4166666666667,0.51,0.49
+ländliche Region,"kleinstädtischer, dörflicher Raum",77,13,569,43.7692307692308,0.53,0.47
