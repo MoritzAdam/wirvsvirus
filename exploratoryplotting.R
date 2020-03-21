@@ -54,9 +54,9 @@ lm_eqn <- function(df){
 ggplot(LK_dat_sel_csum_ma,
        aes(x = Meldedatum, y = csum_ma)) + 
   geom_line() + geom_point() + 
-  geom_smooth(data = LK_dat_sel_csum_ma %>% filter(use == T), method = 'lm') + #filter(Meldedatum < as.Date('2020-03-18'))) +
-  geom_text(x = 0, y = 100, mapping = aes(label = lm_lab), parse = T, 
-            data = LK_dat_sel_csum_ma %>% group_by(Landkreis) %>% nest() %>% mutate(lm_lab = purrr::map(.$data, function(d) lm_eqn(rename(d, x = Meldedatum, y = csum_ma) %>% mutate(y = log(y))))) %>% unnest(lm_lab) %>% select(-data)) + 
+  geom_smooth(data = LK_dat_sel_csum_ma %>% filter(use == T)) + #, method = 'lm') + #filter(Meldedatum < as.Date('2020-03-18'))) +
+  #geom_text(x = 0, y = 100, mapping = aes(label = lm_lab), parse = T, 
+  #          data = LK_dat_sel_csum_ma %>% group_by(Landkreis) %>% nest() %>% mutate(lm_lab = purrr::map(.$data, function(d) lm_eqn(rename(d, x = Meldedatum, y = csum_ma) %>% mutate(y = log(y))))) %>% unnest(lm_lab) %>% select(-data)) + 
   facet_wrap(~ Landkreis, scales = 'free') + 
   scale_y_log10()
 
