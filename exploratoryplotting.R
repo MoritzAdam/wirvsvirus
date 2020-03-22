@@ -1,3 +1,5 @@
+source('data_queries.R')
+
 # plot and fit cummulative growth of Covid19 infections
 # for Bundesländer & Landkreise
 LK_dat <- query_arcgis_all()
