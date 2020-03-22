@@ -3,11 +3,11 @@ library(tidyverse)
 
 #Quellen: Regionalstatistische Raumtypologie (RegioStaR) für die Mobilitäts- und Verkehrsforschung, MiD2017
 
-Landkreis <- read_csv("Documents/WirVsVirus/wirvsvirus/mobility/Landkreis.csv")
-Regiotypen <- read_csv("Documents/WirVsVirus/wirvsvirus/mobility/Regiotypen.csv")
-Predictors <- read_delim("Documents/WirVsVirus/wirvsvirus/predictors_landkreise_tabstop.csv", 
+Landkreis <- read_csv("mobility/Landkreis.csv")
+Regiotypen <- read_csv("mobility/Regiotypen.csv")
+Predictors <- read_delim("predictors_landkreise_tabstop.csv", 
                          "\t", escape_double = FALSE, trim_ws = TRUE)
-Raumtypen <- read_csv("Documents/WirVsVirus/wirvsvirus/mobility/Raumtypen_index.csv")
+Raumtypen <- read_csv("mobility/Raumtypen_index.csv")
 
 df <- data.frame(ID=c("71", "72", "73", "74", "75", "76", "77"), Regio=c("Stadtregion - Metropole", "Stadtregion - Regiopole und Großstadt", "Stadtregion - Mittelstadt, städtischer Raum", "Stadtregion - Kleinstädtischer, dörflicher Raum", "Ländliche Region - Zentrale Stadt", "Ländliche Region - Städtischer Raum", "Ländliche Region - Kleinstädtischer, dörflicher Raum"))
 
