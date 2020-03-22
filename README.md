@@ -40,10 +40,7 @@ MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-
 
 Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels auf das Klima. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
 
-# Wen brauchen wir? - Diese Fähigkeiten und Kapazitäten fehlen uns noch
-- Daten
-- Experten und Partner für Social Media & Campaigning, Unterstützung durch die Wissenschafts-Gemeinschaft (Sozialwissenschaften, Epidemologie)
-- Experten für Datenschutz zur anonymisierten Übermittlung von Maßnahmen zur Eindämmung und Forschungsfragen der Menschen
+
 
 # Konzept
 - Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen von Bürger:innen
@@ -65,12 +62,11 @@ Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelb
 
 - Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
 
-**Ausblick -> Wissenschaftskommunikation: Rückmeldung der Ergebnisse an die Bürger:innen, Weitere Möglichkeiten der statistischen Analyse**
 
-# Nächste Schritte
-
-​	Citizen Science Ansatz umsetzen, Anwendung auf andere Länder oder Regionen ggfs Übersetzung in Englisch
-
+# Ausblick
+ - Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
+ - gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
+ - Hierzu werden benötigt: Zusätzliche Daten (spezifizieren!), Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemolog:innen für dich richtig Einordnung der Ergebnisse. Außerdem Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
 # Referenzen: 
 
