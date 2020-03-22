@@ -13,12 +13,16 @@ LK_dat_csum <- LK_dat %>%
   ungroup()
   #filter(max(csum) > 120 | Landkreis == 'LK Düren')
 
-LK_pred <- read_delim('predictors_landkreise.csv', delim = "\t") %>% 
+LK_pred <- read_delim('predictors_landkreise_mit_mobilitaet.csv', delim = ",") %>% 
   as_tibble() %>% 
   select(-Name) %>% 
   rename(IdLandkreis = Schluessel) %>% 
   mutate(!!sym('Bevölkerung(2018)') := str_replace_all(!!sym('Bevölkerung(2018)'),' ','')) %>% 
-  mutate_at(vars(IdLandkreis, !!sym('Bevölkerung(2018)')), as.numeric)
+  mutate_at(vars(IdLandkreis, !!sym('Bevölkerung(2018)')), as.numeric) %>% 
+  mutate(!!sym('männlich') := str_replace_all(!!sym('männlich'),' ','')) %>% 
+  mutate_at(vars(IdLandkreis, !!sym('männlich')), as.numeric) %>% 
+  mutate(!!sym('weiblich') := str_replace_all(!!sym('weiblich'),' ','')) %>% 
+  mutate_at(vars(IdLandkreis, !!sym('weiblich')), as.numeric)
 
 LK_dat_proc <- LK_dat_csum %>% 
   group_by(IdLandkreis, Meldedatum) %>% 
@@ -61,5 +65,7 @@ LK_dat_csum_ma_gr <- LK_dat_csum_ma %>%
 LK_dat_proc <- LK_dat_proc %>% 
   inner_join(LK_dat_csum_ma_gr)
 # growth rates filtering
-# LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
-# LK_dat_proc %>% filter(csum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
+ LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
+ LK_dat_proc %>% filter(csum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
+ LK_dat_proc_filtered <- LK_dat_proc %>% filter(Meldedatum == as.Date('2020-03-19')) 
+ 
