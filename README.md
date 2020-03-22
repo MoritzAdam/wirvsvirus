@@ -2,7 +2,7 @@
 
 MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-heidelberg.de/paleodyn/channels/wirvsvirus#) in Eure Wohnzimmer! Welche Region dämmt außergewöhnlich gut die Corona-Pandemie ein? Und wieso? Der Kampf gegen das Virus ist eine wissenschaftlichen Aufgabe, welche die Beteilung der Bürger:innen benötigt. Lasst uns kooperien, lasst uns positive Stories über Corona erzählen und daraus lernen!
 
-
+![Screenshot from 2020-03-22 19-18-12](/home/bea/Desktop/Screenshot from 2020-03-22 19-18-12.png)
 
 # Motivation
 *Gesellschaftlicher Mehrwert*
