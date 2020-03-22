@@ -13,7 +13,7 @@ BL_dat_csum <- LK_dat %>%
 ggplot(BL_dat_csum, 
        aes(x = Meldedatum, y = csum)) + 
   geom_line() + geom_point() + 
-  geom_smooth(data = BL_dat %>% filter(Meldedatum < as.Date('2020-03-18'))) +
+  geom_smooth(data = BL_dat %>% filter(Meldedatum < as.Date('2020-03-19'))) +
   facet_wrap(~ Bundesland, scales = 'free') + 
   scale_y_log10()
 
@@ -26,7 +26,7 @@ LK_dat_sel_csum <- LK_dat %>%
   arrange(Meldedatum, .by_group = T) %>% 
   group_by(Landkreis) %>% 
   mutate(csum = cumsum(sum_LK)) %>% 
-  filter(max(csum) > 120)
+  filter(max(csum) > 120 | Landkreis == 'LK Düren')
 
 LK_dat_con <- LK_dat_sel_csum %>% 
   select(Landkreis, Meldedatum) %>% 
