@@ -87,7 +87,6 @@ Um zu schauen wie sich individuelle Maßnahmen von Regionen auf die Wachstumsrat
 ![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
 Mittels einer Lasso Regression, ermitteln wir aus verschiedenen potentiellen Einflussfaktoren diejenigen, die die Fallzahlen am besten erklären. Zum Beispiel führt auf Landkreisebene ein hoher Anteil an jungen Menschen und ein hohes Durchschnittseinkommen aktuell zu höheren Gesamtfallzahlen (pro 100.000 Einwohner), während ein hoher Anteil an alten Menschen und ein hoher Bewegungsradius pro Tag aktuell mit niedrigeren Gesamtfallzahlen einhergeht.
 
-- Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
 ![arrow_plot_lasso.png](/plots/scatter_plot_predictors.png)
 Der statistische Zusammenhang zwischen einzelnen Faktoren und den Fallzahlen kann über Scatterplots und lineare Regressionen analysiert werden. Im linken Plot sieht man wie auf Bundeslandebene ein höherer Anteil an alten Menschen mit niedrigeren Fallzahlen zusammenhängt. Allerdings hat der Altenquotient wenig Einfluss auf die aktuellen Wachstumsraten, sodass sich dieser Zusammenhang in naher Zukunft ändern kann und regelmäßig mit neuen Zahlen überprüft werden muss. Auf Landkreisebene findet sich aktuell ein schwacher positiver Zusammenhang zwischen Fallzahlen und Einkommen.
 
