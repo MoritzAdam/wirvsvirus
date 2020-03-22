@@ -62,3 +62,37 @@ ggplot(LK_dat_sel_csum_ma,
   facet_wrap(~ Landkreis, scales = 'free') + 
   scale_y_log10()
 
+source('data_processing.R')
+ref_data <- LK_dat_proc_filtered$csum_LK_pro_1kEinwohner*100
+ref_data <- LK_dat_proc_filtered$gr
+sapply(c(8:18,21:23),function(x) cor(as.numeric(ref_data),c(as.matrix(as.data.frame(LK_dat_proc_filtered[,x])))))
+load('glasso_results.RData')
+
+# arrow plot
+dat <- kreis_predictors_fallzahlen[,1] %>% as.list() %>% as_tibble() %>% gather() %>% 
+  filter(key %in% c('Bevölkerung(2018)','Anteil Alter18-24 in (%)','Anteil Alter65-alt in (%)','Einkommen','Personenkilometer pro Einwohner pro Tag','Krankenhausbetten/1000 Einwohner')) %>% 
+  mutate(sgn = case_when(value > 0 ~ 1, value == 0 ~ 0, value < 0 ~ -1))
+dat$key <- c('Einwohner', 'Alter\n18-24', 'Alter\n> 65', 'Krankenhaus-\nbetten\npro 1000\nEinwohner', 'Einkommen', 'Personen-\nkilometer\npro Tag')
+
+ggplot(dat) + 
+  geom_segment(aes(y = 0, yend = sgn, x = key, xend = key, color = as.character(sgn)), arrow = arrow(angle = 45, type = 'closed', length = unit(1.2,'cm')), size = 10) + 
+  scale_color_manual(values = c('grey50', '#ED3537', '#1494E9'), guide = FALSE) + 
+  theme_bw() + 
+  theme(axis.title = element_blank(), axis.text.y = element_blank(), axis.ticks.y = element_blank(), panel.grid = element_blank(),
+        text = element_text(size = 20, face = 'bold'))
+
+ggsave('plots/arrow_plot_lasso.pdf', width = 25, height = 12, units = 'cm')
+
+load('regression_data_laender.RData')
+
+# scatter plot
+dat <- regression_data_land %>% 
+  as_tibble() %>% 
+  select(fallzahl, altenquotient)
+
+ggplot(dat) + 
+  geom_point(aes(x = altenquotient, y = fallzahl), size = 3, color = '#0D68C3', shape = 'cross') + 
+  theme_bw() + 
+  theme(panel.grid = element_blank(),
+        text = element_text(size = 20, face = 'bold'))
+  
