@@ -23,19 +23,18 @@ LK_pred <- read_delim('predictors_landkreise.csv', delim = "\t") %>%
 LK_dat_proc <- LK_dat_csum %>% 
   group_by(IdLandkreis, Meldedatum) %>% 
   inner_join(LK_pred, by = 'IdLandkreis') %>% 
-  mutate(sum_LK_pro_Einwohner = sum_LK/!!sym('Bevölkerung(2018)')) %>% 
+  mutate(sum_LK_pro_1kEinwohner = 1e3*sum_LK/!!sym('Bevölkerung(2018)')) %>% 
   ungroup()
 
 # filtering for specific date
 LK_dat_proc_filtered <- LK_dat_proc %>% 
   filter(Meldedatum == as.Date('2020-03-19')) 
 # cases per Einwohner
-LK_dat_proc_filtered$sum_LK_pro_Einwohner
+LK_dat_proc_filtered$sum_LK_pro_1kEinwohner
 
 
-
-# not used
-LK_dat_con <- LK_dat_sel_csum %>% 
+# growth rates based on 3-day-rolling mean and excluding first and last 3 days
+LK_dat_con <- LK_dat_csum %>% 
   select(Landkreis, Meldedatum) %>% 
   group_by(Landkreis) %>% 
   summarise(datmn = min(Meldedatum), datmx = max(Meldedatum)) %>% 
@@ -45,9 +44,22 @@ LK_dat_con <- LK_dat_sel_csum %>%
   mutate(use = if_else(datsq >= datmn & datsq <= datsq, T, F)) %>% 
   rename(Meldedatum = datsq)
 
-LK_dat_sel_csum_ma <- LK_dat_sel_csum %>% 
-  mutate_at(vars(Meldedatum), as.Date) %>% 
+LK_dat_csum_ma <- LK_dat_csum %>% 
   right_join(., LK_dat_con) %>% 
   mutate(csum_ma = zoo::rollapply(csum,3,mean,fill = NA,na.rm=T)) %>% 
   filter(!is.na(csum_ma))
 
+LK_dat_csum_ma_gr <- LK_dat_csum_ma %>%
+  group_by(IdLandkreis) %>%
+  nest() %>%
+  mutate(lm = purrr::map(.$data, function(d) lm(y ~ x, rename(d, x = Meldedatum, y = csum_ma) %>% mutate(y = log(y))))) %>% 
+  mutate(gr = purrr::map(.$lm, function(l) coef(l)[2])) %>% 
+  select(-data,-lm) %>% 
+  unnest(gr)
+
+# add to processed data
+LK_dat_proc <- LK_dat_proc %>% 
+  inner_join(LK_dat_csum_ma_gr)
+# growth rates filtering
+# LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
+# LK_dat_proc %>% filter(sum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
