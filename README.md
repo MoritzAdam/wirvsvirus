@@ -81,7 +81,7 @@ Die Fallzahlen sind hierbei logarithmisch aufgetragen, um potentielles exponenti
 
 
 ## Fallbeispiel 2: Relation von verschiedenen Einflussfaktoren auf die Wachstumsrate von Covid19-Fällen
-
+![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
 **Plot**
 **Interpretation**
 **Ausblick -> Partizipation von Bürger:innen notwendig, Citizen Sciene, Umfrage**
