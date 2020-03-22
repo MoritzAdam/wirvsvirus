@@ -39,12 +39,12 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 - Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung der Methodik gerade für Länder mit geringerer, öffentlicher Datenlage und Kapazität der Behörden nachzudenken.
 
 ### Unser Projekt ist einfach zugänglich und ermöglicht die Partizipation am wissenschaftlichen Prozess:
-- <span style="color:blue">someähnlich wie ein CO2-Rechner auf indiviueller Ebene führen wir nun </span>
-- <span style="color:blue">someWer sind wir? - Diese Qualifikationen bringen wir ein Verständlichkeit des Projekts und welche Herausforderung mit der Lösungsidee wie gelöst werden soll, einschließlich der Gruppe an Menschen die betroffen ist und profitieren würde. Wie gut ist die Lösung kommuniziert und dokumentiert? </span>
+- <span style="color:blue">Ähnlich wie ein CO2-Rechner auf indiviueller Ebene soll MitigationHubs Identifikation mit der Auswirkung des eigenen Handels stiften und dieses in einen wissenschaftlichen Kontext setzen </span>
+- <span style="color:blue">someWer sind wir? Durch verständliche Sprache, anschauliche Fallbeispiele, eine lebendige Interaktion und eine ausführliche Motivation der Analysen soll die Hürde genommen werden, zu dem Projekt beizutragen </span>
 
 ### Die ersten Schritte sind gemacht:
-- Wir haben die aktuelle Datenlage erfasst, die Qualität der Daten eingeschätzt und die weiteren benötigten Daten festgestellt 
-- <span style="color:blue">someAufarbeitung, Nutzbarmachung der Daten welche dem RKI Dashboard zu Grunde liegen insbesondere um lokale Wachstumsraten und einen Trend darin zu errechnen</span>
+- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten welche dem [RKI Dashboard](https://npgeo-corona-npgeo-de.hub.arcgis.com/search?groupIds=b28109b18022405bb965c602b13e1bbc) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
+- <span style="color:blue"> Lokale Wachstumsraten und einen Trend darin zu errechnen</span>
 - <span style="color:blue">someWir haben den Citizen Science-Ansatz entwickelt um Bürger:innen die Partizipation an der wissenschaftlichen Aufarbeitung der Krise zu ermöglichen und zugleich räumlich höher aufgelöste Daten zu Gegenmaßnahmen zu erhalten
 	--> aubauend darauf: Prediktoren finden, die man über eine Kampagne bei Bürger:innen abfragen kann, Datenstandard festlegen, Umfragen-Website, Kampagne mit Partnern planen (Aufrufe via Social Media, Medienberichte, Politik)</span>
 - Basierend auf der gegenwärtigen Datenlage haben wir verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert (siehe unten).
