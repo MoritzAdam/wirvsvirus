@@ -1,6 +1,6 @@
 # MitigationHubs - Pitch #WirVsVirusHack
 
-MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-heidelberg.de/paleodyn/channels/wirvsvirus#) in Eure Wohnzimmer! Welche Region dämmt außergewöhnlich gut die Corona-Pandemie ein? Und wieso? Der Kampf gegen das Virus ist eine wissenschaftlichen Aufgabe, welche die Beteilung der Bürger:innen benötigt. Lasst uns kooperien, lasst uns positive Stories über Corona erzählen und daraus lernen!
+MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Region dämmt außergewöhnlich gut die Corona-Pandemie ein? Und wieso? Der Kampf gegen das Virus ist eine wissenschaftlichen Aufgabe, welche die Beteilung der Bürger:innen benötigt. Lasst uns kooperien, lasst uns positive Stories über Corona erzählen und daraus lernen!
 
 ![Logo_WhiteBG.png](/logo/Logo_WhiteBG.png)
 
@@ -35,7 +35,7 @@ MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-
 
 ### Die Analysen sind vielfach anwendbar:
 - Die Untersuchung von Mitigation Hubs ist auf vielen räumlichen Skalen möglich, sofern Daten verfügbar sind und die Bürger:innen in möglichst großer Zahl partizipieren. 
-- Neben der Landkreisebene ist auch ein nationaler Vergleich sehr gut denkbar.
+- Neben der Landkreisebene ist auch ein internationaler Vergleich sehr gut denkbar.
 - Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung der Methodik gerade für Länder mit geringerer, öffentlicher Datenlage und Kapazität der Behörden nachzudenken.
 
 ### Unser Projekt ist einfach zugänglich und ermöglicht die Partizipation am wissenschaftlichen Prozess:
