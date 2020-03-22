@@ -60,6 +60,6 @@ LK_dat_csum_ma_gr <- LK_dat_csum_ma %>%
 # add to processed data
 LK_dat_proc <- LK_dat_proc %>% 
   inner_join(LK_dat_csum_ma_gr)
-# growth rates
-LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
-LK_dat_proc %>% filter(sum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
+# growth rates filtering
+# LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
+# LK_dat_proc %>% filter(sum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
