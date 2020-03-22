@@ -4,6 +4,7 @@ library(sf)
 
 lk_sf <- read_sf(dsn = 'logo/landkreise-in-germany.shp') %>% 
   filter(name_2 %in% c('Rhein-Neckar-Kreis', 'Heidelberg'))
+# search for a Landkreis: lk_sf$name_2 %>% unique() %>% str_detect(.,'Rhein') or similar
 lk_sf$fill <- c('grey85', 'grey65')
 
 plt <- ggplot(lk_sf) + 
