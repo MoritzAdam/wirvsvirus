@@ -59,3 +59,8 @@ Beitragende: Bea, Elisa, Janica, Nils, Shirin, Moritz
 https://docs.google.com/spreadsheets/d/1jSDNSTxWr5zs7SsACvZ9D4BjjiKCXwqzntXMJthLmTo/edit?usp=sharing
 
 # References
+
+https://www.mobilitaet-in-tabellen.de/mit/
+
+https://www.bmvi.de/SharedDocs/DE/Artikel/G/regionalstatistische-raumtypologie.html
+
