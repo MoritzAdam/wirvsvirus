@@ -1,5 +1,4 @@
-# MitigationHubs -  a contribution to the #wirvsvirus Hackathon 2020
-Beitragende: Bea, Elisa, Janica, Nils, Shirin, Moritz
+MitigationHubs - Pitch #WirVsVirusHack
 
 "Die Wissenschaft braucht dich: Hilf den Wissenschaftler:innen, damit wir alle voneinander lernen können."
 
@@ -39,11 +38,15 @@ Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und i
 
 *Verständlichkeit*
 
-- Verständlichkeit des Projekts und welche Herausforderung mit der Lösungsidee wie gelöst werden soll, einschließlich der Gruppe an Menschen die betroffen ist und profitieren würde. Wie gut ist die Lösung kommuniziert und dokumentiert? 
+- Wer sind wir? - Diese Qualifikationen bringen wir einVerständlichkeit des Projekts und welche Herausforderung mit der Lösungsidee wie gelöst werden soll, einschließlich der Gruppe an Menschen die betroffen ist und profitieren würde. Wie gut ist die Lösung kommuniziert und dokumentiert? 
 - Projekt ist einfach zugänglich
 
-# Wer sind wir? - Diese Qualifikationen bringen wir ein
-- statistische Datenauswertung und Modellierung, Wissenschaftskommunikation
+# Das Team
+
+- Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam - Institut für Umweltphysik Heidelberg
+
+- 
+  statistische Datenauswertung und Modellierung, Wissenschaftskommunikation
 
 # Wen brauchen wir? - Diese Fähigkeiten und Kapazitäten fehlen uns noch
 - Daten
@@ -75,6 +78,8 @@ Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und i
 # Nächste Schritte
 
 ​	Citizen Science Ansatz umsetzen, Anwendung auf andere Länder oder Regionen ggfs Übersetzung in Englisch
+
+
 
 # Referenzen: 
 
