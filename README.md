@@ -1,15 +1,8 @@
-MitigationHubs - Pitch #WirVsVirusHack
+# MitigationHubs - Pitch #WirVsVirusHack
 
-"Die Wissenschaft braucht dich: Hilf den Wissenschaftler:innen, damit wir alle voneinander lernen können."
+MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-heidelberg.de/paleodyn/channels/wirvsvirus#) in Eure Wohnzimmer! Welche Region dämmt außergewöhnlich gut die Corona-Pandemie ein? Und wieso? Der Kampf gegen das Virus ist eine wissenschaftlichen Aufgabe, welche die Beteilung der Bürger:innen benötigt. Lasst uns kooperien, lasst uns positive Stories über Corona erzählen und daraus lernen!
 
-Die es durch kreative Verhaltensweisen schaffen, außergewöhnlich gut mit den Folgen des Coronavirus umzugehen? Können wir deren Verhalten verstehen und anderen Individuen, Gruppen, Gemeinden, Landkreisen mit diesen Lösungen dabei helfen, ebenfalls besser mit Corona umzugehen?
-#flattenthecurve wird zum weltweiten Slogan um sich für das physical distancing zu motivieren! 
 
-Menschen sind kreativ und motiviert #flattenthecurve-Maßnahmen zu ergreifen. Einkaufshilfen für die Nachbarschaft werden eingerichtet, auf vielfältige Weise schützen sich Menschen auf der Arbeit vor einer Ansteckung zum Beispiel in den Supermärkten. 
-
-Teilhabe heißt Verständnis und Innovation.
-
-Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und ihre Folgen sind ein gesamt-gesellschaftliches, globales Problem. Der Vorsprung des Menschen über den Virus ist die Fähigkeit zur Kooperation und zum Teilen von Kommunikation. Lasst uns das tun!
 
 # Motivation
 *Gesellschaftlicher Mehrwert*
@@ -43,10 +36,9 @@ Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und i
 
 # Das Team
 
-- Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam - Institut für Umweltphysik Heidelberg
+- Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam 
 
-- 
-  statistische Datenauswertung und Modellierung, Wissenschaftskommunikation
+- Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels auf das Klima. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
 
 # Wen brauchen wir? - Diese Fähigkeiten und Kapazitäten fehlen uns noch
 - Daten
