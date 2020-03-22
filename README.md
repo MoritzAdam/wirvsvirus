@@ -36,9 +36,9 @@ MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-
 
 # Das Team
 
-- Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam 
+*Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam* 
 
-- Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels auf das Klima. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
+Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels auf das Klima. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
 
 # Wen brauchen wir? - Diese Fähigkeiten und Kapazitäten fehlen uns noch
 - Daten
@@ -70,7 +70,6 @@ MitigationHubs bringt das Projekt [#flattenthecurve](https://mattermost.iup.uni-
 # Nächste Schritte
 
 ​	Citizen Science Ansatz umsetzen, Anwendung auf andere Länder oder Regionen ggfs Übersetzung in Englisch
-
 
 
 # Referenzen: 
