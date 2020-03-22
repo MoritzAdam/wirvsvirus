@@ -13,7 +13,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 ## Ablauf
 
 1. Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen durch Bürger:innen
-2. Analyse der anonymen Umfragedaten und Identifikation von positiven Abweichlern durch das Wissenschaftsteam (Fallbeispiele sind unten zu finden)
+2. Analyse der RKI Daten sowie anonymen Daten zur lokalen Eindämmung und Identifikation von positiven Abweichlern durch das Wissenschaftsteam (siehe Fallbeispiele unten)
 3. Rückmeldung der Ergebnisse an die partizipierenden Bürger:innen und die allgemeine Öffentlichkeit
 
 ## Motivation
@@ -26,35 +26,35 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 - Verständnis für die Unvollständigkeit wissenschaftlicher Erkenntnisse wecken
 - Bürger:innen ein besseres Verständnis der Datenlage vermitteln
 
-*Jede:r Bürger:in bekommt die Möglichkeit Wissenschaftler:innen zu unterstützen und profitiert am Ende von den Erkenntnissen.*
+*MitigationHubs, das sind jene Landkreise und Regionen, welche es im Vergleich besonders gut schaffen, die Ausbreitung des Covid19-Virus zu verlangsamen. Wir wollen diese identifizieren. Jede:r Bürger:in bekommt die Möglichkeit die Wissenschaftler:innen dabei zu unterstützen und profitiert am Ende von den Erkenntnissen.*
 
 ### Unsere Ergebnisse könnten:
 - Im Rahmen der nächsten Wochen und Monate die Akzeptanz der drastischen Maßnahmen weiter unterstützen
 - Zur momentanen Evaluierung der getroffenen Maßnahmen dienen, aber auch in zukünftige Pläne der Bundesrepublik einfließen
-- Die positiven Effekte von lokalen Maßnahmen herausheben
+- Die positiven Effekte von lokalen Maßnahmen und lokaler Datenanalyse aufführen
 
 ### Die Analysen sind vielfach anwendbar:
-- Die Untersuchung von Mitigation Hubs ist auf vielen räumlichen Skalen möglich, sofern Daten verfügbar sind und die Bürger:innen in möglichst großer Zahl partizipieren. 
-- Neben der Landkreisebene ist auch ein internationaler Vergleich sehr gut denkbar.
-- Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung der Methodik gerade für Länder mit geringerer, öffentlicher Datenlage und Kapazität der Behörden nachzudenken.
+- Die Untersuchung von MitigationHubs ist auf vielen räumlichen Skalen möglich, sofern Daten verfügbar sind und die Bürger:innen in möglichst großer Zahl partizipieren
+- Neben der Landkreisebene ist auch ein internationaler Vergleich durch leichte Änderungen am Code möglich
+- Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung der Methodik gerade für Länder mit geringeren, öffentlich-verfügbaren Daten und kleinerer Kapazität der Behörden nachzudenken
 
 ### Unser Projekt ist einfach zugänglich und ermöglicht die Partizipation am wissenschaftlichen Prozess:
-- <span style="color:blue">Ähnlich wie ein CO2-Rechner auf indiviueller Ebene soll MitigationHubs Identifikation mit der Auswirkung des eigenen Handels stiften und dieses in einen wissenschaftlichen Kontext setzen </span>
-- <span style="color:blue">someWer sind wir? Durch verständliche Sprache, anschauliche Fallbeispiele, eine lebendige Interaktion und eine ausführliche Motivation der Analysen soll die Hürde genommen werden, zu dem Projekt beizutragen </span>
+- Ähnlich wie ein CO2-Rechner auf indiviueller Ebene soll MitigationHubs Identifikation mit der Auswirkung des eigenen Handels stiften und dieses in einen wissenschaftlichen Kontext setzen
+- Durch verständliche Sprache, anschauliche Fallbeispiele, eine lebendige Interaktion und eine ausführliche Motivation der Analysen soll die Hürde genommen werden, zu dem Projekt beizutragen 
 
 ### Die ersten Schritte sind gemacht:
-- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten welche dem [RKI Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
+- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten, welche dem [RKI Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
 - Eine Routine zum Berechnen lokaler Wachstumsraten wurde entwickelt und getestet. 
-- Basierend auf der gegenwärtigen Datenlage haben wir verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert um mögliche Korrelationen zwischen Prediktoren, Fallzahlen und Eindämmungsmaßnahmen festzustellen.
-- Grundlegende Überlegungen um MitigationHubs in ein Citizen Science-Projekt weiterzuentwickelen wurden angestellt. Dieses Vorhaben ist uns ein besonderes Anliegen, da wir es Bürger:innen die Partizipation ermöglichen möchten, an der wissenschaftlichen Aufarbeitung der Krise teilzunehmen.
+- Basierend auf der gegenwärtigen Datenlage haben wir verschiedene Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert um mögliche Korrelationen zwischen Prediktoren, Fallzahlen und Eindämmungsmaßnahmen festzustellen.
+- Grundlegende Überlegungen um MitigationHubs in ein Citizen Science-Projekt weiterzuentwickeln wurden bereits angestellt. Dieses Vorhaben ist uns ein besonderes Anliegen, da wir es Bürger:innen die Partizipation ermöglichen möchten, an der wissenschaftlichen Aufarbeitung der Krise teilzunehmen.
 
 ### Was kommt als Nächstes?
 - Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
 - gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
-- Hierzu werden benötigt: Zusätzliche Sammlung von anonymisierten Daten mit Hilfe der Bürger:innen, Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse, Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
+- Um das Projekt MitigationHubs auszubauen werden benötigt: Zusätzliche Sammlung von anonymisierten Daten mit Hilfe der Bürger:innen, Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse, Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
 # Fallbeispiele
-In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbeispiele betrachtet, die mögliche Analysen illustrieren. Entscheidend für die Identifikation von Mitigation Hubs, sind neben den aktuellen Fallzahlen vor allem Kenntnisse über lokale Maßnahmen, die eine Eindämmung der weiteren Verbreitung des Covid19-Virus zum Ziel haben. Hierfür brauchen wir die Beteiligung der Bürger:innen.
+In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbeispiele betrachtet, die mögliche Analysen illustrieren. Entscheidend für die Identifikation von MitigationHubs, sind neben den aktuellen Fallzahlen vor allem Kenntnisse über lokale Maßnahmen, die eine Eindämmung der weiteren Verbreitung des Covid19-Virus zum Ziel haben. Hierfür brauchen wir die Beteiligung der Bürger:innen.
 
 ## Forschungsfragen
 - Welche Landkreise und Regionen schaffen es im Vergleich besonders gut die Ausbreitung des Covid19-Virus zu verlangsamen?
@@ -79,7 +79,7 @@ In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbe
 
 *Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam* 
 
-Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels in der Klima-Krise. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
+Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels in der Klima-Krise. Das motiviert uns offenzulegen, welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Bewältigung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
 
 # Referenzen
 
