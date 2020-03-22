@@ -84,10 +84,12 @@ Die Fallzahlen sind hierbei logarithmisch aufgetragen, um potentielles exponenti
 ![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
 **Plot**
 **Interpretation**
-**Ausblick -> Partizipation von Bürger:innen notwendig, Citizen Sciene, Umfrage**
+
 
 - Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
+![arrow_plot_lasso.png](/plots/scatter_plot_predictors.png)
 
+**Ausblick -> Partizipation von Bürger:innen notwendig, Citizen Sciene, Umfrage**
 **Ausblick -> Wissenschaftskommunikation: Rückmeldung der Ergebnisse an die Bürger:innen, Weitere Möglichkeiten der statistischen Analyse**
 ​	
 # Das Team
