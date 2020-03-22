@@ -1,67 +1,68 @@
-MitigationHubs - Pitch #WirVsVirusHack
+# MitigationHubs - Pitch #WirVsVirusHack
 
-"Die Wissenschaft braucht dich: Hilf den Wissenschaftler:innen, damit wir alle voneinander lernen können."
+MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Region dämmt außergewöhnlich gut die Corona-Pandemie ein? Und wieso? Der Kampf gegen das Virus ist eine wissenschaftlichen Aufgabe, welche die Beteilung der Bürger:innen benötigt. Lasst uns kooperien, lasst uns positive Stories über Corona erzählen und daraus lernen!
 
-Die es durch kreative Verhaltensweisen schaffen, außergewöhnlich gut mit den Folgen des Coronavirus umzugehen? Können wir deren Verhalten verstehen und anderen Individuen, Gruppen, Gemeinden, Landkreisen mit diesen Lösungen dabei helfen, ebenfalls besser mit Corona umzugehen?
-#flattenthecurve wird zum weltweiten Slogan um sich für das physical distancing zu motivieren! 
+![Logo_WhiteBG.png](/logo/Logo_WhiteBG.png)
 
-Menschen sind kreativ und motiviert #flattenthecurve-Maßnahmen zu ergreifen. Einkaufshilfen für die Nachbarschaft werden eingerichtet, auf vielfältige Weise schützen sich Menschen auf der Arbeit vor einer Ansteckung zum Beispiel in den Supermärkten. 
+# Unser Projekt
 
-Teilhabe heißt Verständnis und Innovation.
+[Pitch Video auf YouTube](https://www.youtube.com/watch?v=c1ocxDVbZk0&feature=youtu.be)
 
-Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und ihre Folgen sind ein gesamt-gesellschaftliches, globales Problem. Der Vorsprung des Menschen über den Virus ist die Fähigkeit zur Kooperation und zum Teilen von Kommunikation. Lasst uns das tun!
+[Projekt auf Devpost](https://devpost.com/software/landkreis-basierte-datenanalyse-der-fallzahlen-njehgr)
 
-# Motivation
-*Gesellschaftlicher Mehrwert*
+## Ablauf
 
-- positives Bewusstsein, Motivation der Bürger:innen zum verantwortungsvollen Handeln
-- Verständnis für Unvollständigkeit der wissenschaftlichen Erkenntnisse, zugleich Teilhabe am wissenschaftlichen Prozess durch Citizen Science. Allgemein besseres Verständnis der Datenlage. 
-- An positiven Beispielen für diese Krise und zukünftige Herausforderungen gemeinsam lernen, jede:r Bürger:in bekommt die Möglichkeit Wissenschaftler:innen zu unterstützen und profitiert am Ende von den Erkenntnissen. Durch den enormen Aufwand durch die Krise haben die Behörde nicht die Kapazitäten um diese Daten zu generieren. Hier können die Bürger:innen einspringen!
-- Ergebnisse können kurzfristig (im Rahmen der nächsten Wochen) die Akzeptanz der drastischen Maßnahmen weiter hochhalten, zur momentanen Evaluierung der getroffenen Maßnahmen dienen, aber auch in zukünftige Pläne der Bundesrepublik einfließen.
-- Akzeptanz Föderalismus und Lokalpolitik und Lokalpolitik stärken: Narrativ: "Lokale Behörden wissen besser was gut für die Gemeinden/Städte/Kreise/lokale Gesellschaft ist -> Positive Effekte von lokalen Maßnahmen herausheben."
+1. Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen von Bürger:innen
+2. Analyse der anonymen Umfragedaten und Identifikation von positiven Abweichlern durch das Wissenschaftsteam (Fallbeispiele sind unten zu finden)
+3. Rückmeldung der Ergebnisse an die partizipierenden Bürger:innen und die allgemeine Öffentlichkeit
 
-*Innovationsgrad*
+## Motivation
 
-- Innovationsgrad und Kreativität der Lösungsidee sowie des beabsichtigten Ansatzes oder der Technologie, mit der die Lösung implementiert wird. Gibt es bestehende oder ähnliche Lösungen? Wie unterscheiden sie sich von dieser? 
-- ähnlich wie ein CO2-Rechner auf indiviueller Ebene führen wir nun 
+### Wir möchten mit unserem Projekt:
 
-*Skalierbarkeit*
+- An positiven Beispielen für diese Krise und zukünftige Herausforderungen gemeinsam lernen
+- Die gesellschaftliche Teilhabe am wissenschaftlichen Prozess durch Citizen Science ermöglichen
+- Anhand positiver Beispiele Bürger:innen zum verantwortungsvollen Handeln motivieren
+- Verständnis für die Unvollständigkeit wissenschaftlicher Erkenntnisse wecken
+- Bürger:innen ein besseres Verständnis der Datenlage vermitteln
 
-- Untersuchung von Mitigation Hubs ist auf vielen räumlichen Skalen möglich, sofern Daten verfügbar sind und die Bürger:innen in möglichst großer Zahl partizipieren. Derzeit Landkreisebene aufwärts. Sehr gut denkbar ist auch ein nationaler Vergleich. Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung gerade für Länder mit geringerer, öffentlicher Datenlage und Kapazität der Behörden nachzudenken!
+*Jede:r Bürger:in bekommt die Möglichkeit Wissenschaftler:innen zu unterstützen und profitiert am Ende von den Erkenntnissen.*
 
-*Fortschritt*
+### Unsere Ergebnisse könnten:
+- Im Rahmen der nächsten Wochen und Monate die Akzeptanz der drastischen Maßnahmen weiter unterstützen
+- Zur momentanen Evaluierung der getroffenen Maßnahmen dienen, aber auch in zukünftige Pläne der Bundesrepublik einfließen
+- Die positiven Effekte von lokalen Maßnahmen herausheben
 
-- Aktuelle Datenlage erfasst, Qualitätsanalyse der Daten, Bedarf an weiteren Daten formuliert (welche?), Aufarbeitung, Nutzbarmachung der Daten welche dem RKI Dashboard zu Grunde liegen insbesondere um lokale Wachstumsraten und einen Trend darin zu errechnen
-- Citizen Science-Ansatz entwickelt um Bürger:innen die Partizipation an der wissenschaftlichen Aufarbeitung der Krise zu ermöglichen und zugleich räumlich höher aufgelöste Daten zu Gegenmaßnahmen zu erhalten
-	--> aubauend darauf: Prediktoren finden, die man über eine Kampagne bei Bürger:innen abfragen kann, Datenstandard festlegen, Umfragen-Website, Kampagne mit Partnern planen (Aufrufe via Social Media, Medienberichte, Politik)
-- Basierend auf der gegenwärtigen Datenlage: Ausprobieren verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen.
+### Die Analysen sind vielfach anwendbar:
+- Die Untersuchung von Mitigation Hubs ist auf vielen räumlichen Skalen möglich, sofern Daten verfügbar sind und die Bürger:innen in möglichst großer Zahl partizipieren. 
+- Neben der Landkreisebene ist auch ein internationaler Vergleich sehr gut denkbar.
+- Spannend wäre es mit dem GIZ Data Lab als Unterstützer über eine mögliche Weiterentwicklung der Methodik gerade für Länder mit geringerer, öffentlicher Datenlage und Kapazität der Behörden nachzudenken.
 
-*Verständlichkeit*
+### Unser Projekt ist einfach zugänglich und ermöglicht die Partizipation am wissenschaftlichen Prozess:
+- <span style="color:blue">Ähnlich wie ein CO2-Rechner auf indiviueller Ebene soll MitigationHubs Identifikation mit der Auswirkung des eigenen Handels stiften und dieses in einen wissenschaftlichen Kontext setzen </span>
+- <span style="color:blue">someWer sind wir? Durch verständliche Sprache, anschauliche Fallbeispiele, eine lebendige Interaktion und eine ausführliche Motivation der Analysen soll die Hürde genommen werden, zu dem Projekt beizutragen </span>
 
-- Wer sind wir? - Diese Qualifikationen bringen wir einVerständlichkeit des Projekts und welche Herausforderung mit der Lösungsidee wie gelöst werden soll, einschließlich der Gruppe an Menschen die betroffen ist und profitieren würde. Wie gut ist die Lösung kommuniziert und dokumentiert? 
-- Projekt ist einfach zugänglich
+### Die ersten Schritte sind gemacht:
+- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten welche dem [RKI Dashboard](https://npgeo-corona-npgeo-de.hub.arcgis.com/search?groupIds=b28109b18022405bb965c602b13e1bbc) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
+- <span style="color:blue"> Lokale Wachstumsraten und einen Trend darin zu errechnen</span>
+- <span style="color:blue">someWir haben den Citizen Science-Ansatz entwickelt um Bürger:innen die Partizipation an der wissenschaftlichen Aufarbeitung der Krise zu ermöglichen und zugleich räumlich höher aufgelöste Daten zu Gegenmaßnahmen zu erhalten
+	--> aubauend darauf: Prediktoren finden, die man über eine Kampagne bei Bürger:innen abfragen kann, Datenstandard festlegen, Umfragen-Website, Kampagne mit Partnern planen (Aufrufe via Social Media, Medienberichte, Politik)</span>
+- Basierend auf der gegenwärtigen Datenlage haben wir verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert (siehe unten).
 
-# Das Team
+### Was kommt als Nächstes?
+- Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
+- gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
+- Hierzu werden benötigt: Zusätzliche Daten sammeln mit Hilfe der Bürger:innen, Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemolog:innen für dich richtig Einordnung der Ergebnisse. Außerdem Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
-- Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam - Institut für Umweltphysik Heidelberg
+# Fallbeispiele
+In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbeispiele betrachtet, die mögliche Analysen illustrieren. Entscheidend für die Identifikation von Mitigation Hubs, sind neben den aktuellen Fallzahlen vor allem Kenntnisse über lokale Maßnahmen, die eine Eindämmung der weiteren Verbreitung des Covid19-Virus zum Ziel haben. Hierfür brauchen wir die Beteiligung der Bürger:innen.
 
-- 
-  statistische Datenauswertung und Modellierung, Wissenschaftskommunikation
-
-# Wen brauchen wir? - Diese Fähigkeiten und Kapazitäten fehlen uns noch
-- Daten
-- Experten und Partner für Social Media & Campaigning, Unterstützung durch die Wissenschafts-Gemeinschaft (Sozialwissenschaften, Epidemologie)
-- Experten für Datenschutz zur anonymisierten Übermittlung von Maßnahmen zur Eindämmung und Forschungsfragen der Menschen
-
-# Konzept
-- Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen von Bürger:innen
-- Analyse der Daten und Identifikation von positiven Abweichlern durch das Wissenschaftsteam
-- Rückmeldung der Ergebnisse an die partizipierenden Bürger:innen und die allgemeine Öffentlichkeit
-- Gleichzeitig wollen wir auf eine Anonymisierung der Daten achten
-
-# Fallbeispiele, Mögliche Analysemethoden
-- Welche Landkreise und Regionen schaffen es im Vergleich besonders gut die Ausbreitung des Covid19-Virus zu verlangsamen? Was kann die Bundesrepublik von diesen positiven Abweichlern lernen? Auf welche Maßnahmen sollte ich als Bürger:in besonderen Wert legen?
-  *Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg*
+## Forschungsfragen
+- Welche Landkreise und Regionen schaffen es im Vergleich besonders gut die Ausbreitung des Covid19-Virus zu verlangsamen?
+- Was kann die Bundesrepublik von diesen positiven Abweichlern lernen? 
+- Auf welche Maßnahmen sollte ich als Bürger:in besonderen Wert legen?
+  
+*Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg*
   **Plot**
   **Interpretation**
   **Ausblick -> Skalierbarkeit auf Bundesebene**
@@ -74,14 +75,14 @@ Wie haben die Wahl zwischen Isolation oder Solidarität. Aber die Epidemie und i
 - Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
 
 **Ausblick -> Wissenschaftskommunikation: Rückmeldung der Ergebnisse an die Bürger:innen, Weitere Möglichkeiten der statistischen Analyse**
+​	
+# Das Team
 
-# Nächste Schritte
+*Beatice Ellerhoff, Elisa Ziegler, Janica Bühler, Nils Weitzel, Shirin Ermis, Moritz Adam* 
 
-​	Citizen Science Ansatz umsetzen, Anwendung auf andere Länder oder Regionen ggfs Übersetzung in Englisch
+Unser Team aus 6 Wissenschaftler:innen des Institut für Umweltphysik in Heidelberg bringt Erfahrung mit der statistische Auswertung großer Datenmengen, der Modellierung komplexer mathematischer Zusammenhänge und der lebendigen Kommunikation von Wissenschaft mit. Aus unserem Forschungsalltag wissen wir, wie mühsam das Erreichen einer 1.5 Grad gerechten Welt ist, sieht man doch keinen unmittelbaren Erfolg des eigenen Handels in der Klima-Krise. Das motiviert uns offenzulegen welche kreativen Lösungen zur Eindämmung der Coronavirus-Pandemie auf lokaler Ebene beitragen. So wollen wir das Verständnis der Wissenschaft hinter der Covid-19-Pandemie stärken und nachhaltig Bürger:innen an einer kooperativen Lösung dieser gesamtgesellschaftlichen Aufgabe beteiligen. 
 
-
-
-# Referenzen: 
+# Referenzen
 
 RKI Dashboard zu Fallzahlen auf Bundesland- und Landkreisebene: https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/
 
