@@ -40,7 +40,7 @@ sum(bundesland_ts_matrix[,18],na.rm=T)
 sort(unique(rki_data_landkreise$Meldedatum))
 landkreise <- data.frame(ID=unique(rki_data_landkreise$IdLandkreis),name=unique(rki_data_landkreise$Landkreis))
 relevant_dates <- seq.Date(as.Date(min(unique(rki_data_landkreise$Meldedatum))),as.Date(max(unique(rki_data_landkreise$Meldedatum))),by="day")
-bundeslaender <- data.frame(ID=unique(rki_data_landkreise$IdBundesland),name=unique(rki_data_landkreise$Bundesland),id_cross=c()); bundeslaender$name <- as.character(bundeslaender$name)
+bundeslaender <- data.frame(ID=unique(rki_data_landkreise$IdBundesland),name=unique(rki_data_landkreise$Bundesland),id_cross=c(7,4,10,8,1,9,2,3,11,5,17,14,16,12,13,15)); bundeslaender$name <- as.character(bundeslaender$name)
 rki_landkreise_matrix <- array(0,dim=c(length(landkreise$ID),length(relevant_dates)))
 rki_bundesland_matrix <- array(0,dim=c(length(bundeslaender$ID),length(relevant_dates)))
 
@@ -87,5 +87,49 @@ for (i in 2:17) {
   tmp <- bfast(ts(log(rki_bundesland_cum[i,which(rki_bundesland_cum[i,]>0)]),frequency = 1),h=0.4,season="none",max.iter = 10)
   plot(tmp,main=bundeslaender$name[i])
 }
+
+
+library(glmnet)
+tmp_cv <- cv.glmnet(as.matrix(predictors),rki_bundesland_cum[,18])
+tmp_best_lamda <- tmp_cv$lambda.min
+tmp_lasso <- glmnet(as.matrix(predictors),rki_bundesland_cum[,18],alpha = 1, lambda = tmp_best_lamda)
+emulator$sel_predictors[[i]] <- which(as.matrix(tmp_lasso$beta) != 0)
+
+predictors_laender <- read.csv("predictors_laenderebene.csv",sep="\t")
+predictors_laender$Altenquotient.2018
+predictors_kreise <- read.csv("predictors_landkreise.csv",sep="\t")
+
+fallzahlen <- as_tibble(rki_data_landkreise)
+predictors_lk <- as_tibble(predictors_kreise)
+preidctorsandlks <- predictors_lk %>% 
+  select(-Landkreis) %>% 
+  rename(IdLandkreis = Schluessel) %>% 
+  inner_join(fallzahlen %>% 
+               filter(IdBundesland > 0) %>% 
+               mutate_at(vars(IdLandkreis), as.numeric))
+
+# Richtung 1
+predictors_kreise %>% select(-Landkreis) %>% rename(IdLandkreis = Schluessel) %>% anti_join(fallzahlen %>% filter(IdBundesland > 0) %>% mutate_at(vars(IdLandkreis), as.numeric))
+# Richtung 2
+anti_join(fallzahlen %>% filter(IdBundesland > 0) %>% mutate_at(vars(IdLandkreis), as.numeric) %>% distinct(IdLandkreis), predictors_lk %>% select(-Landkreis) %>% rename(IdLandkreis = Schluessel))
+
+
+# Dataframe LK / BL
+# ID, name, aktuelle fallzahl, wachstumrate (im prinzip aus den daten, über die du den loess smoother gelegt hast), prediktoren
+
+regression_data_land <- data.frame(
+  id <- bundeslaender$ID,
+  shortname <- predictors_laender$Land[reorder_laender],
+  fallzahl <- rki_bundesland_cum[,51],
+  altenquotient <- as.numeric(predictors_laender$Altenquotient.2018)[reorder_laender],
+  intensivbetten <- as.numeric(predictors_laender$Anzahl.Intensivbetten..Tsd..Einwohner)[reorder_laender],
+  dichte <- as.numeric(predictors_laender$Bevölerungsdichte.1.km.2)[reorder_laender]
+)
+
+predictors_laender <- read.csv("predictors_laenderebene.csv",colClasses = "character",sep="\t")
+predictors_landkreise <- read.csv("predictors_landkreise_mit_mobilitaet.csv",colClasses = "character")
+
+reorder_laender <- c(1,13,3,4,2,12,11,6,7,5,10,14,15,16,9,8)
+
 
 
