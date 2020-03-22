@@ -52,7 +52,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 - Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
 - gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
 - Hierzu werden benötigt: 
-⋅⋅* Zusätzliche Daten sammeln mit Hilfe der Bürger:innen
+⋅⋅⋅ Zusätzliche Daten sammeln mit Hilfe der Bürger:innen
 ⋅⋅- Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse
 ⋅⋅- Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
