@@ -82,6 +82,7 @@ ggplot(dat) +
         text = element_text(size = 20, face = 'bold'))
 
 ggsave('plots/arrow_plot_lasso.pdf', width = 25, height = 12, units = 'cm')
+ggsave('plots/arrow_plot_lasso.png', width = 25, height = 12, units = 'cm')
 
 load('regression_data_laender.RData')
 
@@ -90,9 +91,25 @@ dat <- regression_data_land %>%
   as_tibble() %>% 
   select(fallzahl, altenquotient)
 
-ggplot(dat) + 
-  geom_point(aes(x = altenquotient, y = fallzahl), size = 3, color = '#0D68C3', shape = 'cross') + 
+plt1 <- ggplot(dat, aes(x = altenquotient, y = fallzahl)) + 
+  geom_point(size = 7, color = '#0D68C3', shape = '\u2716') + 
+  geom_smooth(method = 'lm', formula = y~x) + 
+  labs(x = 'Altenquotient', y = 'Fallzahl pro\n100.000 Einwohner') + 
   theme_bw() + 
   theme(panel.grid = element_blank(),
         text = element_text(size = 20, face = 'bold'))
+
+dat <- LK_dat_proc_filtered %>% 
+  select(csum_LK_pro_1kEinwohner, Einkommen)
+
+plt2 <- ggplot(dat, aes(x = Einkommen/1000, y = csum_LK_pro_1kEinwohner * 100)) + 
+  geom_point(size = 2, color = '#0D68C3', shape = '\u2716') + 
+  geom_smooth(method = 'lm', formula = y~x) + 
+  labs(x = 'Einkommen/\n1000 Euro') + 
+  theme_bw() + 
+  theme(panel.grid = element_blank(), axis.title.y = element_blank(),
+        text = element_text(size = 20, face = 'bold'))
+
+plt <- cowplot::plot_grid(plt1,plt2, align = 'hv', axis = 'tblr')
+ggsave(plot = plt, filename = 'plots/scatter_plot_predictors.png', width = 25, height = 12, units = 'cm')
   
