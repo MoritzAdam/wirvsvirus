@@ -23,14 +23,14 @@ LK_pred <- read_delim('predictors_landkreise.csv', delim = "\t") %>%
 LK_dat_proc <- LK_dat_csum %>% 
   group_by(IdLandkreis, Meldedatum) %>% 
   inner_join(LK_pred, by = 'IdLandkreis') %>% 
-  mutate(sum_LK_pro_1kEinwohner = 1e3*sum_LK/!!sym('Bevölkerung(2018)')) %>% 
+  mutate(csum_LK_pro_1kEinwohner = 1e3*csum/!!sym('Bevölkerung(2018)')) %>% 
   ungroup()
 
 # filtering for specific date
 LK_dat_proc_filtered <- LK_dat_proc %>% 
   filter(Meldedatum == as.Date('2020-03-19')) 
 # cases per Einwohner
-LK_dat_proc_filtered$sum_LK_pro_1kEinwohner
+LK_dat_proc_filtered$csum_LK_pro_1kEinwohner
 
 
 # growth rates based on 3-day-rolling mean and excluding first and last 3 days
@@ -62,4 +62,4 @@ LK_dat_proc <- LK_dat_proc %>%
   inner_join(LK_dat_csum_ma_gr)
 # growth rates filtering
 # LK_dat_proc %>% filter(gr > 0) %>% .$gr %>% hist()
-# LK_dat_proc %>% filter(sum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
+# LK_dat_proc %>% filter(csum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0) %>% .$gr %>% hist()
