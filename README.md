@@ -51,10 +51,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 ### Was kommt als Nächstes?
 - Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
 - gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
-- Hierzu werden benötigt: 
-⋅⋅* Zusätzliche Daten sammeln mit Hilfe der Bürger:innen
-⋅⋅- Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse
-⋅⋅- Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
+- Hierzu werden benötigt: Zusätzliche Sammlung von anonymisierten Daten mit Hilfe der Bürger:innen, Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse, Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
 # Fallbeispiele
 In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbeispiele betrachtet, die mögliche Analysen illustrieren. Entscheidend für die Identifikation von Mitigation Hubs, sind neben den aktuellen Fallzahlen vor allem Kenntnisse über lokale Maßnahmen, die eine Eindämmung der weiteren Verbreitung des Covid19-Virus zum Ziel haben. Hierfür brauchen wir die Beteiligung der Bürger:innen.
