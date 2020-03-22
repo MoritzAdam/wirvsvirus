@@ -44,7 +44,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 
 ### Die ersten Schritte sind gemacht:
 - Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten, welche dem [RKI Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
-- Eine Routine zum Berechnen lokaler Wachstumsraten wurde entwickelt und getestet. 
+- Eine Routine zum Berechnen lokaler Wachstumsraten basierend auf stetig aktualisierten Daten wurde entwickelt und getestet. 
 - Basierend auf der gegenwärtigen Datenlage haben wir verschiedene Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert um mögliche Korrelationen zwischen Prediktoren, Fallzahlen und Eindämmungsmaßnahmen festzustellen.
 - Grundlegende Überlegungen um MitigationHubs in ein Citizen Science-Projekt weiterzuentwickeln wurden bereits angestellt. Dieses Vorhaben ist uns ein besonderes Anliegen, da wir es Bürger:innen die Partizipation ermöglichen möchten, an der wissenschaftlichen Aufarbeitung der Krise teilzunehmen.
 
@@ -88,12 +88,12 @@ Um zu schauen wie sich individuelle Maßnahmen von Regionen auf die Wachstumsrat
 ![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
 *Fallbeispiel 2: Positive (rot) und Negative Korrelationen (Blau) zwischen der Wachstumsrate von Covid19-Fällen und verschiedener Prediktoren*
 
-Mittels einer Lasso Regression, ermitteln wir aus verschiedenen potentiellen Einflussfaktoren diejenigen, die die Fallzahlen am besten erklären. Zum Beispiel führt auf Landkreisebene ein hoher Anteil an jungen Menschen und ein hohes Durchschnittseinkommen aktuell zu höheren Gesamtfallzahlen (pro 100.000 Einwohner), während ein hoher Anteil an alten Menschen und ein hoher Bewegungsradius pro Tag aktuell mit niedrigeren Gesamtfallzahlen einhergeht.
+Mittels einer sogenannten Lasso Regression, ermitteln wir aus verschiedenen potentiellen Einflussfaktoren diejenigen, die die Fallzahlen am besten erklären. Zum Beispiel führt auf Landkreisebene ein hoher Anteil an jungen Menschen und ein hohes Durchschnittseinkommen aktuell zu höheren Gesamtfallzahlen (pro 100.000 Einwohner), während ein hoher Anteil an alten Menschen und ein hoher Bewegungsradius pro Tag aktuell mit niedrigeren Gesamtfallzahlen einhergeht.
 
 ![arrow_plot_lasso.png](/plots/scatter_plot_predictors.png)
 *Fallbeispiel 2: Eine Regressionsmethode prüft die Signifikanz von Einflüsse auf die Fallzahlen, hier durch die Demographie & das Einkommen*
 
-Der statistische Zusammenhang zwischen einzelnen Faktoren und den Fallzahlen kann über Scatterplots und lineare Regressionen analysiert werden. Im linken Plot sieht man wie auf Bundeslandebene ein höherer Anteil an alten Menschen mit niedrigeren Fallzahlen zusammenhängt. Allerdings hat der Altenquotient wenig Einfluss auf die aktuellen Wachstumsraten, sodass sich dieser Zusammenhang in naher Zukunft ändern kann und regelmäßig mit neuen Zahlen überprüft werden muss. Auf Landkreisebene findet sich aktuell ein schwacher positiver Zusammenhang zwischen Fallzahlen und Einkommen.
+Der statistische Zusammenhang zwischen einzelnen Faktoren und den Fallzahlen kann über Scatterplots und lineare Regressionen (siehe Abbildung oben) analysiert werden. In der linken Abbildung sieht man wie auf Bundeslandebene ein höherer Anteil an alten Menschen mit niedrigeren Fallzahlen zusammenhängt. Allerdings hat der Altenquotient wenig Einfluss auf die aktuellen Wachstumsraten, sodass sich dieser Zusammenhang in naher Zukunft ändern kann und regelmäßig mit neuen Zahlen überprüft werden muss. Auf Landkreisebene findet sich aktuell ein schwacher positiver Zusammenhang zwischen Fallzahlen und Einkommen.
 
 Wichtig ist, dass diese Faktoren nicht unbedingt mit Kausalität einhergehen. Aber sie können genutzt werden, um Hypothesen über die Ausbreitung des Virus zu unterstützen und wiederlegen. Stetig aktualisierte Daten und eine Überprüfung weiterer Einflussfaktoren können unsere vorläufigen Ergebnisse verbessern.
 
