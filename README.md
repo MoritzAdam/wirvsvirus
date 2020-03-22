@@ -61,12 +61,27 @@ In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbe
 - Was kann die Bundesrepublik von diesen positiven Abweichlern lernen? 
 - Auf welche Maßnahmen sollte ich als Bürger:in besonderen Wert legen?
   
-*Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg*
-  **Plot**
-  **Interpretation**
-  **Ausblick -> Skalierbarkeit auf Bundesebene**
+## Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg
+![case_study_landkreise-png.png](/case_study/case_study_landkreise.png)
 
-- Fallbeispiel 2: Relation von verschiedenen Einflussfaktoren auf die Wachstumsrate von Covid19-Fällen*
+Landkreise in Deutschland unterscheiden sich anhand vieler Merkmale:
+- ihre generelle Struktur, also zum Beispiel die Bevölkerungsdichte, handelt es sich um eine Großstadt oder ländliche Region, Einkommen, und Altersgruppenverteilung,
+- wann die ersten positiven Fälle gefunden wurden,
+- und wann welche Maßnahmen zur Eindämmung des Virus getroffen wurden.
+
+Hier vergleichen wir vier Landkreise, in direkter oder nahezu direkter Nachbarschaft zueinander: 
+- den Landkreis Heinsberg, in dem sehr früh Fälle aufgetreten sind, und der dementsprechend früh Maßnahmen zur Eindämmung getroffen hat,
+- die StadtRegion Aachen,
+- den Landkreis Düren,
+- und den Stadtkreis Köln.
+
+Die Daten, zu denen gewisse Maßnahmen eingeführt wurden, sind hierbei den Webseiten der Landkreise entnommen. Bis auf die Schulschließungen im Landkreis Heinsberg stimmen diese mit der Einführung der Maßnahmen auf Landesebene überein. Für die Veranstaltungsverbote und Ladenschließungen ist jeweils das Datum, zu dem der Beschluss veröffentlicht wurde, aufgeführt.
+
+Die Fallzahlen sind hierbei logarithmisch aufgetragen, um potentielles exponentielles Wachstum, das bei ungebremster Ausbreitung des Virus zu erwarten ist, besser sichtbar zu machen. Schon mit bloßem Auge lassen sich Änderungen im Anstieg erkennen. Um diese belastbar statistisch zu untersuchen und zum Beispiel die Wirksamkeit von Maßnahmen zu belegen oder Prediktoren zu finden, die einen Landkreis besonders widerstandsfähig machen, decken die Daten noch einen zu geringen Zeitraum ab. Um eine solche Analyse auf ganz Deutschland auszuweiten, müssten v.a. auch die Daten zur Einführung verschiedener Maßnahmen gesammelt werden. Mit dem anwachsenden Datenvolumen in den nächsten Wochen, hätte eine Analyse (z.B. eine breakpoint analysis), aber das Potenzial regionale Trends sichtbar zu machen und besonders wirksame Maßnahmen hervorzuheben. 
+
+
+## Fallbeispiel 2: Relation von verschiedenen Einflussfaktoren auf die Wachstumsrate von Covid19-Fällen
+
 **Plot**
 **Interpretation**
 **Ausblick -> Partizipation von Bürger:innen notwendig, Citizen Sciene, Umfrage**
