@@ -12,7 +12,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 
 ## Ablauf
 
-1. Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen von Bürger:innen
+1. Aufruf zur Unterstützung von Wissenschaftler:innen durch Meldung von Maßnahmen und das Sammeln von Fragen durch Bürger:innen
 2. Analyse der anonymen Umfragedaten und Identifikation von positiven Abweichlern durch das Wissenschaftsteam (Fallbeispiele sind unten zu finden)
 3. Rückmeldung der Ergebnisse an die partizipierenden Bürger:innen und die allgemeine Öffentlichkeit
 
