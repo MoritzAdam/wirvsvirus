@@ -43,16 +43,18 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 - <span style="color:blue">someWer sind wir? Durch verständliche Sprache, anschauliche Fallbeispiele, eine lebendige Interaktion und eine ausführliche Motivation der Analysen soll die Hürde genommen werden, zu dem Projekt beizutragen </span>
 
 ### Die ersten Schritte sind gemacht:
-- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten welche dem [RKI Dashboard](https://npgeo-corona-npgeo-de.hub.arcgis.com/search?groupIds=b28109b18022405bb965c602b13e1bbc) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
-- <span style="color:blue"> Lokale Wachstumsraten und einen Trend darin zu errechnen</span>
-- <span style="color:blue">someWir haben den Citizen Science-Ansatz entwickelt um Bürger:innen die Partizipation an der wissenschaftlichen Aufarbeitung der Krise zu ermöglichen und zugleich räumlich höher aufgelöste Daten zu Gegenmaßnahmen zu erhalten
-	--> aubauend darauf: Prediktoren finden, die man über eine Kampagne bei Bürger:innen abfragen kann, Datenstandard festlegen, Umfragen-Website, Kampagne mit Partnern planen (Aufrufe via Social Media, Medienberichte, Politik)</span>
-- Basierend auf der gegenwärtigen Datenlage haben wir verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert (siehe unten).
+- Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten welche dem [RKI Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
+- Eine Routine zum Berechnen lokaler Wachstumsraten wurde entwickelt und getestet. 
+- Basierend auf der gegenwärtigen Datenlage haben wir verschiedener Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert um mögliche Korrelationen zwischen Prediktoren, Fallzahlen und Eindämmungsmaßnahmen festzustellen.
+- Grundlegende Überlegungen um MitigationHubs in ein Citizen Science-Projekt weiterzuentwickelen wurden angestellt. Dieses Vorhaben ist uns ein besonderes Anliegen, da wir es Bürger:innen die Partizipation ermöglichen möchten, an der wissenschaftlichen Aufarbeitung der Krise teilzunehmen.
 
 ### Was kommt als Nächstes?
 - Umsetzen des Citizen Science Ansatz durch Beteiligung und Rückmeldung der Ergebnisse an die Bürger:innen, Erweiterungen durch zusätzliche Möglichkeiten der statistischen Analyse
 - gegebenenfalls Anwendung auf andere Länder oder Regionen, die Methode kann hierzu leicht adaptiert werden
-- Hierzu werden benötigt: Zusätzliche Daten sammeln mit Hilfe der Bürger:innen, Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemolog:innen für dich richtig Einordnung der Ergebnisse. Außerdem Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
+- Hierzu werden benötigt: 
+⋅⋅- Zusätzliche Daten sammeln mit Hilfe der Bürger:innen
+⋅⋅- Unterstützung durch Expert:innen und Partner:innen für Social Media & Campaigning sowie durch Sozialwissenschaftler:innen und Epidemiolog:innen für dich richtig Einordnung der Ergebnisse
+⋅⋅- Expert:innen für Datenschutz um eine anonymisierten Übermittlung von Daten zu gewährleisten und gegebenenfalls Programmierer:innen falls eine App-Anwendung gestaltet werden möchte
 
 # Fallbeispiele
 In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbeispiele betrachtet, die mögliche Analysen illustrieren. Entscheidend für die Identifikation von Mitigation Hubs, sind neben den aktuellen Fallzahlen vor allem Kenntnisse über lokale Maßnahmen, die eine Eindämmung der weiteren Verbreitung des Covid19-Virus zum Ziel haben. Hierfür brauchen wir die Beteiligung der Bürger:innen.
