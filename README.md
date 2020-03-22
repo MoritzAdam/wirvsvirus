@@ -81,10 +81,11 @@ Die Fallzahlen sind hierbei logarithmisch aufgetragen, um potentielles exponenti
 
 
 ## Fallbeispiel 2: Relation von verschiedenen Einflussfaktoren auf die Wachstumsrate von Covid19-Fällen
-![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
-**Plot**
-**Interpretation**
 
+Um zu schauen wie sich individuelle Maßnahmen von Regionen auf die Wachstumsraten der Covid19-Fälle auswirken, versuchen wir die erwarteten Wachstumsraten ohne individuelle Maßnahmen möglichst genau vorherzusagen. Um die sozio-ökonomische Vielfalt und ihre Auswirkungen auf die Wachstumsraten zu berücksichtigen, testen wir den Einfluss von verschiedenen Einflussfaktoren auf die Wachstumsraten und die absoluten Fallzahlen.
+
+![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
+Mittels einer Lasso Regression, ermitteln wir aus einem 
 
 - Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
 ![arrow_plot_lasso.png](/plots/scatter_plot_predictors.png)
