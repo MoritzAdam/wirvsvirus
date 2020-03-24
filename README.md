@@ -44,7 +44,7 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 
 ### Die ersten Schritte sind gemacht:
 - Wir haben die aktuelle Datenlage erfasst, aufgearbeitet und ergänzt sowie deren Qualität eingeschätzt. Dadurch wurden die Daten, welche dem [RKI Dashboard](https://experience.arcgis.com/experience/478220a4c454480e823b17327b2bf1d4/page/page_1/) zu Grunde liegen, für weitere Analysen nutzbar gemacht.
-- Eine Routine zum Berechnen lokaler Wachstumsraten wurde entwickelt und getestet. 
+- Eine Routine zum Berechnen lokaler Wachstumsraten basierend auf stetig aktualisierten Daten wurde entwickelt und getestet. 
 - Basierend auf der gegenwärtigen Datenlage haben wir verschiedene Methoden der Statistik, Datenanalyse und Modellierung anhand von Fallbeispielen ausprobiert um mögliche Korrelationen zwischen Prediktoren, Fallzahlen und Eindämmungsmaßnahmen festzustellen.
 - Grundlegende Überlegungen um MitigationHubs in ein Citizen Science-Projekt weiterzuentwickeln wurden bereits angestellt. Dieses Vorhaben ist uns ein besonderes Anliegen, da wir es Bürger:innen die Partizipation ermöglichen möchten, an der wissenschaftlichen Aufarbeitung der Krise teilzunehmen.
 
@@ -63,6 +63,7 @@ In den 48 Stunden des #WirVsVirusHack haben wir mit unseren Methoden drei Fallbe
   
 ## Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg
 ![case_study_landkreise-png.png](/case_study/case_study_landkreise.png)
+*Fallbeispiel 1: Vergleich der Fallzahlenentwicklung im und um den Landkreis Heinsberg*
 
 Landkreise in Deutschland unterscheiden sich anhand vieler Merkmale:
 - ihre generelle Struktur, also zum Beispiel die Bevölkerungsdichte, handelt es sich um eine Großstadt oder ländliche Region, Einkommen, und Altersgruppenverteilung,
@@ -77,18 +78,25 @@ Hier vergleichen wir vier Landkreise, in direkter oder nahezu direkter Nachbarsc
 
 Die Daten, zu denen gewisse Maßnahmen eingeführt wurden, sind hierbei den Webseiten der Landkreise entnommen. Bis auf die Schulschließungen im Landkreis Heinsberg stimmen diese mit der Einführung der Maßnahmen auf Landesebene überein. Für die Veranstaltungsverbote und Ladenschließungen ist jeweils das Datum, zu dem der Beschluss veröffentlicht wurde, aufgeführt.
 
-Die Fallzahlen sind hierbei logarithmisch aufgetragen, um potentielles exponentielles Wachstum, das bei ungebremster Ausbreitung des Virus zu erwarten ist, besser sichtbar zu machen. Schon mit bloßem Auge lassen sich Änderungen im Anstieg erkennen. Um diese belastbar statistisch zu untersuchen und zum Beispiel die Wirksamkeit von Maßnahmen zu belegen oder Prediktoren zu finden, die einen Landkreis besonders widerstandsfähig machen, decken die Daten noch einen zu geringen Zeitraum ab. Um eine solche Analyse auf ganz Deutschland auszuweiten, müssten v.a. auch die Daten zur Einführung verschiedener Maßnahmen gesammelt werden. Mit dem anwachsenden Datenvolumen in den nächsten Wochen, hätte eine Analyse (z.B. eine breakpoint analysis), aber das Potenzial regionale Trends sichtbar zu machen und besonders wirksame Maßnahmen hervorzuheben. 
+Die Fallzahlen sind logarithmisch aufgetragen, um potentielles exponentielles Wachstum, das bei ungebremster Ausbreitung des Virus zu erwarten ist, besser sichtbar zu machen. Schon mit bloßem Auge lassen sich Änderungen im Anstieg erkennen. Um diese belastbar statistisch zu untersuchen und zum Beispiel die Wirksamkeit von Maßnahmen zu belegen oder Prediktoren zu finden, die einen Landkreis besonders widerstandsfähig machen, decken die Daten noch einen zu geringen Zeitraum ab. Um eine solche Analyse auf ganz Deutschland auszuweiten, müssten v.a. auch die Daten zur Einführung verschiedener Maßnahmen gesammelt werden. Mit dem anwachsenden Datenvolumen in den nächsten Wochen, hätte eine Analyse (z.B. eine breakpoint analysis), aber das Potenzial regionale Trends sichtbar zu machen und besonders wirksame Maßnahmen hervorzuheben. 
 
 
 ## Fallbeispiel 2: Relation von verschiedenen Einflussfaktoren auf die Wachstumsrate von Covid19-Fällen
+
+Um zu schauen wie sich individuelle Maßnahmen von Regionen auf die Wachstumsraten der Covid19-Fälle auswirken, versuchen wir die erwarteten Wachstumsraten ohne individuelle Maßnahmen möglichst genau vorherzusagen. Um die sozio-ökonomische Vielfalt und ihre Auswirkungen auf die Wachstumsraten zu berücksichtigen, testen wir den Einfluss von verschiedenen Einflussfaktoren auf die Wachstumsraten und die absoluten Fallzahlen.
+
 ![arrow_plot_lasso.png](/plots/arrow_plot_lasso.png)
-**Plot**
-**Interpretation**
-**Ausblick -> Partizipation von Bürger:innen notwendig, Citizen Sciene, Umfrage**
+*Fallbeispiel 2: Positive (rot) und negative Korrelationen (Blau) zwischen der Wachstumsrate von Covid19-Fällen und verschiedenen Prediktoren*
 
-- Fallbeispiel 3: Nähere Statistische Analyse von Einflussfaktoren
+Mittels einer sogenannten Lasso Regression, ermitteln wir aus verschiedenen potentiellen Einflussfaktoren diejenigen, die die Fallzahlen am besten erklären. Zum Beispiel führt auf Landkreisebene ein hoher Anteil an jungen Menschen und ein hohes Durchschnittseinkommen aktuell zu höheren Gesamtfallzahlen (pro 100.000 Einwohner), während ein hoher Anteil an alten Menschen und ein hoher Bewegungsradius pro Tag aktuell mit niedrigeren Gesamtfallzahlen einhergeht.
 
-**Ausblick -> Wissenschaftskommunikation: Rückmeldung der Ergebnisse an die Bürger:innen, Weitere Möglichkeiten der statistischen Analyse**
+![arrow_plot_lasso.png](/plots/scatter_plot_predictors.png)
+*Fallbeispiel 2: Eine Regressionsmethode prüft die Signifikanz von Einflüssen auf die Fallzahlen, hier durch die Demographie & das Einkommen*
+
+Der statistische Zusammenhang zwischen einzelnen Faktoren und den Fallzahlen kann über Scatterplots und lineare Regressionen (siehe Abbildung oben) analysiert werden. In der linken Abbildung sieht man wie auf Bundeslandebene ein höherer Anteil an alten Menschen mit niedrigeren Fallzahlen zusammenhängt. Allerdings hat der Altenquotient wenig Einfluss auf die aktuellen Wachstumsraten, sodass sich dieser Zusammenhang in naher Zukunft ändern kann und regelmäßig mit neuen Zahlen überprüft werden muss. Auf Landkreisebene findet sich aktuell ein schwacher positiver Zusammenhang zwischen Fallzahlen und Einkommen.
+
+Wichtig ist, dass diese Faktoren nicht unbedingt mit Kausalität einhergehen. Aber sie können genutzt werden, um Hypothesen über die Ausbreitung des Virus zu unterstützen und wiederlegen. Stetig aktualisierte Daten und eine Überprüfung weiterer Einflussfaktoren können unsere vorläufigen Ergebnisse verbessern.
+
 ​	
 # Das Team
 
