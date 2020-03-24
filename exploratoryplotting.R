@@ -26,7 +26,8 @@ LK_dat_sel_csum <- LK_dat %>%
   arrange(Meldedatum, .by_group = T) %>% 
   group_by(Landkreis) %>% 
   mutate(csum = cumsum(sum_LK)) %>% 
-  filter(max(csum) > 120 | Landkreis == 'LK Düren')
+  filter(Landkreis %in% c('LK Düren', 'SK Köln', 'LK Heinsberg', 'StadtRegion Aachen'))
+  #filter(max(csum) > 120 | Landkreis == 'LK Düren')
 
 LK_dat_con <- LK_dat_sel_csum %>% 
   select(Landkreis, Meldedatum) %>% 

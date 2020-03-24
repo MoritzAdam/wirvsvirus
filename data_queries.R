@@ -13,7 +13,7 @@ library(tidyverse)
 #' @export
 #'
 #' @examples dat <- query_arcgis_all()
-query_arcgis_all <- function(n_entries = 8919,
+query_arcgis_all <- function(n_entries = 12773,
                              batch_size = 2000,
                              force_download = FALSE,
                              dir = './data_landkreise') {
