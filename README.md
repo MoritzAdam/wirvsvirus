@@ -6,6 +6,8 @@ MitigationHubs bringt das Projekt #flattenthecurve in Eure Wohnzimmer! Welche Re
 
 # Unser Projekt
 
+[Webseite (im Aufbau)](https://mitigationhubs.github.io/)
+
 [Pitch Video auf YouTube](https://www.youtube.com/watch?v=c1ocxDVbZk0&feature=youtu.be)
 
 [Projekt auf Devpost](https://devpost.com/software/landkreis-basierte-datenanalyse-der-fallzahlen-njehgr)
