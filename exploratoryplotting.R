@@ -13,7 +13,7 @@ BL_dat_csum <- LK_dat %>%
 ggplot(BL_dat_csum, 
        aes(x = Meldedatum, y = csum)) + 
   geom_line() + geom_point() + 
-  geom_smooth(data = BL_dat %>% filter(Meldedatum < as.Date('2020-03-19'))) +
+  geom_smooth(data = BL_dat_csum %>% filter(Meldedatum < as.Date('2020-03-19'))) +
   facet_wrap(~ Bundesland, scales = 'free') + 
   scale_y_log10()
 
@@ -55,12 +55,15 @@ lm_eqn <- function(df){
 }
 
 ggplot(LK_dat_sel_csum_ma,
-       aes(x = Meldedatum, y = csum_ma)) + 
-  geom_line() + geom_point() + 
-  geom_smooth(data = LK_dat_sel_csum_ma %>% filter(use == T)) + #, method = 'lm') + #filter(Meldedatum < as.Date('2020-03-18'))) +
-  #geom_text(x = 0, y = 100, mapping = aes(label = lm_lab), parse = T, 
+       aes(x = Meldedatum)) + 
+  geom_point(aes(y = csum, colour="Fallzahlen")) + 
+  geom_bar(aes(y=sum_LK, fill="Neuinfektionen"), width=.9, stat="identity") +
+  geom_smooth(aes(y=csum_ma, linetype="Interpolation"), data = LK_dat_sel_csum_ma %>% filter(use == T)) + #, method = 'lm') + #filter(Meldedatum < as.Date('2020-03-18'))) +
+ # geom_text(x = 0, y = 100, mapping = aes(label = lm_lab), parse = T, 
   #          data = LK_dat_sel_csum_ma %>% group_by(Landkreis) %>% nest() %>% mutate(lm_lab = purrr::map(.$data, function(d) lm_eqn(rename(d, x = Meldedatum, y = csum_ma) %>% mutate(y = log(y))))) %>% unnest(lm_lab) %>% select(-data)) + 
   facet_wrap(~ Landkreis, scales = 'free') + 
+  labs(colour="", fill="", linetype="") +
+  scale_colour_manual(values = "black", breaks = c("Fallzahlen"), labels = c("Fallzahlen"))+
   scale_y_log10()
 
 source('data_processing.R')
