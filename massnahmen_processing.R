@@ -1,6 +1,7 @@
 library(googlesheets4)
 library(googledrive)
-library(tidyverse)
+li
+brary(tidyverse)
 library(readr)
 library(readxl)
 #drive_auth()
@@ -22,13 +23,24 @@ if (drive_has_token()){
   
   gverzeichnis <- tibble(
     plz = as.numeric(unlist(regmatches(gverzeichnis.lookup$plz_ort, gregexpr("[[:digit:]]+", gverzeichnis.lookup$plz_ort)))),
+    stadt = sub("^\\s+", "", gsub('[[:digit:]]+', '', gverzeichnis.lookup$plz_ort)),
     IdLandkreis = gverzeichnis.lookup$schlüssel %>% substr(1, 5)
   )
-  
-  sonstige_massnahmen <- response %>% filter(was == "sonstiges")
-  
-  response %>% as_tibble() %>% left_join(gverzeichnis) %>% filter(was != "sonstiges") %>% filter(!is.na(IdLandkreis))
 
+  response <- response %>% as_tibble() 
+  
+  #join by plz  
+  joined.plz <- response %>% select(-stadt) %>% inner_join(gverzeichnis, )
+  
+  #join by stadt
+  joined.stadt <- response %>% select(-plz) %>% inner_join(gverzeichnis, )
+  
+  #merge: filtered result
+  result <- full_join(joined.plz, joined.stadt) %>% filter(was != "sonstiges")  %>% filter(!is.na(IdLandkreis))
+  
+  #failed matches, here post-processing is required
+  joined.fail <- anti_join(
+    response,
+    result %>% select(-plz, -stadt))
 }
-
 
