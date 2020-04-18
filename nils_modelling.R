@@ -4,6 +4,7 @@ library(httr)
 library(rlist)
 library(jsonlite)
 library(tidyverse)
+library(glmnet)
 
 bundesland_ts <- read.csv("RKI_ts_bundesland/data/covid19-germany.csv",colClasses = c("numeric","character","numeric","numeric","Date"))
 bundesland_spread <- read.csv("speed_of_spread.cvs",colClasses = c("character","character","numeric","numeric"))
@@ -134,8 +135,6 @@ regression_data_land <- data.frame(
   dichte = as.numeric(predictors_laender$Bevölerungsdichte.1.km.2)
 )
 
-library(glmnet)
-
 tmp_cv <- cv.glmnet(as.matrix(regression_data_land[,6:8]),regression_data_land$fallzahl)
 tmp_best_lamda <- tmp_cv$lambda.min
 tmp_lasso <- glmnet(as.matrix(regression_data_land[,6:8]),regression_data_land$fallzahl,alpha = 1, lambda = tmp_best_lamda)
@@ -145,6 +144,8 @@ points(predict(tmp_cv,newx = as.matrix(regression_data_land[,6:8])),pch=20,col="
 plot(regression_data_land$altenquotient,regression_data_land$fallzahl,pch=20)
 cor(regression_data_land$altenquotient,regression_data_land$fallzahl)
 tmp_lasso$beta
+cor(as.numeric(regression_data_land$fallzahl),predict(tmp_lasso,newx = as.matrix(regression_data_land[,6:8])))
+
 
 tmp_cv <- cv.glmnet(as.matrix(regression_data_land[,6:8]),regression_data_land$wachstum)
 tmp_best_lamda <- tmp_cv$lambda.min
@@ -155,6 +156,7 @@ points(predict(tmp_cv,newx = as.matrix(regression_data_land[,6:8])),pch=20,col="
 plot(regression_data_land$altenquotient,regression_data_land$wachstum,pch=20)
 cor(regression_data_land$altenquotient,regression_data_land$wachstum)
 tmp_lasso$beta
+cor(as.numeric(regression_data_land$wachstum),predict(tmp_lasso,newx = as.matrix(regression_data_land[,6:8])))
 
 
 # [1] "Landkreis"                               "Meldedatum"                              "IdLandkreis"                            
@@ -195,9 +197,127 @@ cor(as.numeric(ref_data),as.numeric(LK_dat_proc_filtered$Einkommen))
 
 cor(as.numeric(ref_data),as.numeric(LK_dat_proc_filtered$`Anteil Alter18-24 in (%)`))
 cor(as.numeric(ref_data),as.numeric(LK_dat_proc_filtered$`Anteil Alter65-alt in (%)`))
-cor(as.numeric(ref_data),as.numeric(LK_dat_proc_filtered$Einkommen))
-
 sapply(c(8:18,21:23),function(x) cor(as.numeric(ref_data),c(as.matrix(as.data.frame(LK_dat_proc_filtered[,x])))))
 
-plot(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,8]))),as.numeric(ref_data))
-plot(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,17]))),as.numeric(ref_data))
+plot(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,17]))),as.numeric(ref_data),pch=20,cex=0.2)
+lines(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,17]))),predict(lm(y~x,data.frame(x=c(as.matrix(as.data.frame(LK_dat_proc_filtered[,17]))),y=ref_data))))
+
+plot(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,15]))),as.numeric(ref_data),pch=20,cex=0.2)
+lines(c(as.matrix(as.data.frame(LK_dat_proc_filtered[,15]))),predict(lm(y~x,data.frame(x=c(as.matrix(as.data.frame(LK_dat_proc_filtered[,15]))),y=ref_data))))
+
+colnames(LK_dat_proc_filtered[c(8:18,21:23)])
+
+kreis_predictornames <- colnames(LK_dat_proc_filtered[c(8:18,21:23)])
+kreis_predictors_fallzahlen <- tmp_lasso$beta
+kreis_cor_regression_fallzahlen <- cor(as.numeric(ref_data),predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))))
+kreis_predictors_gr <- tmp_lasso$beta
+kreis_cor_regression_gr <- cor(as.numeric(ref_data),predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))))
+land_predictornames <- colnames(regression_data_land[,6:8])
+land_predictors_fallzahlen <- tmp_lasso$beta
+land_cor_regression_fallzahlen <- cor(as.numeric(regression_data_land$fallzahl),predict(tmp_lasso,newx = as.matrix(regression_data_land[,6:8])))
+land_predictors_gr <- tmp_lasso$beta
+land_cor_regression_gr <- cor(as.numeric(regression_data_land$wachstum),predict(tmp_lasso,newx = as.matrix(regression_data_land[,6:8])))
+
+save(regression_data_land,file="regression_data_laender.RData")
+save(kreis_predictornames,land_predictornames,land_predictors_fallzahlen,land_cor_regression_fallzahlen,land_predictors_gr,land_cor_regression_gr,kreis_predictors_fallzahlen,kreis_cor_regression_fallzahlen,kreis_predictors_fallzahlen,kreis_predictors_gr,kreis_cor_regression_gr,file="glasso_results_03_26.RData")
+
+# ----------- TEST LANDATLAS ---------
+landatlas <- read.csv("landatlas_byGenderAndAgeGroup.csv")
+landatlas$IdLandkreis <- landatlas$KreisID
+LK_dat_proc <- LK_dat_proc %>%
+   inner_join(landatlas, by = 'IdLandkreis') %>%
+   ungroup()
+
+predictors <- c(8:18,21:23,28:32,34:38,40:47,49:60,62:64,66:72,75:77,79,81,83:118)
+ref_data <- LK_dat_proc_filtered$csum_LK_pro_1kEinwohner*100
+ref_data <- LK_dat_proc_filtered$gr
+tmp_cv <- cv.glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data))
+tmp_best_lamda <- tmp_cv$lambda.min
+tmp_lasso <- glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data),alpha = 1, lambda = tmp_best_lamda)
+sel_predictors <- which(as.matrix(tmp_lasso$beta) != 0)
+plot(as.numeric(ref_data),pch=20,col="red")
+points(predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))),pch=20,col="blue")
+#plot(regression_data_land$altenquotient,regression_data_land$fallzahl,pch=20)
+#cor(regression_data_land$altenquotient,regression_data_land$fallzahl)
+cor(as.numeric(ref_data),predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))))
+tmp_lasso$beta
+cor(as.numeric(ref_data),as.numeric(LK_dat_proc_filtered$Einkommen))
+
+
+Soziooekonomische_Lage
+Schulabg_Hochschulreife
+Schulabg_ohne
+Laendlichkeit
+SuV_Veraenderung
+Breitband_GemVB
+Wohnungsleerstand
+Natuerliche_Bev_Entwicklung
+Grundschule
+
+#33,39,48,61,65,73,74,78,80
+
+test_cor <- t(as.matrix(sapply(c(8:18,21:23,28:32,34:38,40:47,49:60,62:64,66:72,75:77,79,81,83:118),function(x) cor(as.numeric(ref_data),c(as.matrix(as.data.frame(LK_dat_proc_filtered[,x])))))))
+colnames(test_cor) <- colnames(LK_dat_proc_filtered[,predictors])
+test_cor
+
+# --------- Temporal evoluation of predictors ---------------
+
+#ref_dates <- c(as.Date('2020-03-12'),as.Date('2020-03-19'),as.Date('2020-03-26'),as.Date('2020-04-02'))
+ref_dates <- as.Date('2020-03-12'):as.Date('2020-04-02')
+predictors <- c(8:18,21:23)
+cor_zahlen <- cor_gr <- 0
+lasso_zahlen <- lasso_gr <- array(0,dim=c(length(ref_dates),length(predictors)))
+mean_gr <- 0
+
+for (i in 1:length(ref_dates)) {
+  end_date <- ref_dates[i]
+  LK_dat_csum_filt <- LK_dat_csum_ma %>% filter(Meldedatum <= end_date) #%>% filter(Meldedatum > end_date-14)
+  LK_dat_csum_filt_gr <- LK_dat_csum_filt %>%
+    group_by(IdLandkreis) %>%
+    nest() %>%
+    mutate(lm = purrr::map(.$data, function(d) lm(y ~ x, rename(d, x = Meldedatum, y = csum_ma) %>% mutate(y = log(y))))) %>% 
+    mutate(gr = purrr::map(.$lm, function(l) coef(l)[2])) %>% 
+    select(-data,-lm) %>% 
+    unnest(gr)
+  # add to processed data
+  LK_dat_proc_tmp <- LK_dat_proc %>% 
+    inner_join(LK_dat_csum_filt_gr) %>% filter(csum_LK_pro_1kEinwohner > 0.05) %>% filter(gr > 0)
+  LK_dat_proc_filtered <- LK_dat_proc_tmp %>% filter(Meldedatum == end_date)
+  
+  mean_gr[i] <- mean(LK_dat_proc_filtered$gr)
+  
+  ref_data <- LK_dat_proc_filtered$csum_LK_pro_1kEinwohner*100
+  tmp_cv <- cv.glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data))
+  tmp_best_lamda <- tmp_cv$lambda.min
+  tmp_lasso <- glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data),alpha = 1, lambda = tmp_best_lamda)
+  sel_predictors <- which(as.matrix(tmp_lasso$beta) != 0)
+  # plot(as.numeric(ref_data),pch=20,col="red",main=paste(end_date,"Fallzahlen"))
+  # points(predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))),pch=20,col="blue")
+  cor_zahlen[i] <- cor(as.numeric(ref_data),predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))))
+  lasso_zahlen[i,] <- sign(as.matrix(tmp_lasso$beta))
+  
+  ref_data <- exp(LK_dat_proc_filtered$gr)-1
+  tmp_cv <- cv.glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data))
+  tmp_best_lamda <- tmp_cv$lambda.min
+  tmp_lasso <- glmnet(as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors])),as.numeric(ref_data),alpha = 1, lambda = tmp_best_lamda)
+  sel_predictors <- which(as.matrix(tmp_lasso$beta) != 0)
+  # plot(as.numeric(ref_data),pch=20,col="red",main=paste(end_date,"GR"))
+  # points(predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))),pch=20,col="blue")
+  cor_gr[i] <- cor(as.numeric(ref_data),predict(tmp_lasso,newx = as.matrix(as.data.frame(LK_dat_proc_filtered[,predictors]))))
+  lasso_gr[i,] <- sign(as.matrix(tmp_lasso$beta))
+}
+
+plot(cor_gr)
+plot(cor_zahlen)
+
+par(mar=c(3,12,2,0.5))
+image(ref_dates,1:length(predictors),lasso_gr,col=c("green","white","red"),yaxt="n",ylab="",xlab="",main="Wachstumsraten")
+axis(side=2,at=1:length(predictors),labels = colnames(LK_dat_proc_filtered[,predictors]),las=1)
+
+image(ref_dates,1:length(predictors),lasso_zahlen,col=c("darkgreen","white","darkred"),yaxt="n",ylab="",xlab="",main="Fallzahlen")
+axis(side=2,at=1:length(predictors),labels = colnames(LK_dat_proc_filtered[,predictors]),las=1)
+
+cor()
+
+plot(mean_gr)
+
